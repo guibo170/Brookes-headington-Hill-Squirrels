@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barry the Legendary Chubby Squirrel | Oxford Brookes Special Tribute</title>
+  <meta name="description" content="A special tribute page dedicated to Barry the squirrel, Oxford Brookes' most famous, chubby, and beloved canopy legend, tamed by the campus security guard.">
+  
+  <!-- Google Fonts: Fraunces & Fredoka & Quicksand -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="barry-page-body">
+
+  <!-- Floating Falling Leaves / Acorns Canvas Background -->
+  <canvas id="ambient-canvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Top Navigation & Sticky Audio Dock -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="brand-link" aria-label="Headington Hill Squirrel Field Guide">
+        <span class="brand-icon"><img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon brand-acorn-icon"></span>
+        <div class="brand-text">
+          <span class="brand-title">Headington Hill</span>
+          <span class="brand-sub">Canopy Crew Guide • Oxford Brookes</span>
+        </div>
+      </a>
+      
+      <nav class="nav-links barry-nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-item">← Field Guide</a>
+        <a href="index.html#meet-the-squirrels" class="nav-item">Meet Squirrels</a>
+        <a href="barry.html" class="nav-item active-nav-pill">⭐ Barry</a>
+        <a href="#missing-bary-inquiry" class="nav-item missing-nav-pill">🔍 Missing</a>
+      </nav>
+
+      <!-- Audio Player & Sound Controls Widget -->
+      <div class="audio-widget-container" id="audio-widget-container">
+        <div class="audio-widget" role="region" aria-label="Campus Ambient Sound Player">
+          <button id="audio-play-toggle" class="audio-btn play-btn" aria-label="Play or Pause Campus Music" title="Play / Pause Campus Music">
+            <span class="play-icon" id="play-icon">▶</span>
+          </button>
+                    
+          <div class="audio-info">
+            <div class="track-header">
+              <span class="audio-waveform-bars" id="audio-waveform" aria-hidden="true">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </span>
+              <span class="track-title" title="Acorns on the Quad">Acorns on the Quad</span>
+            </div>
+            <div class="audio-controls-row">
+              <button id="audio-mute-toggle" class="mute-btn" aria-label="Toggle Mute" title="Toggle Sound">
+                <span id="mute-icon">🔇</span>
+              </button>
+              <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.05" value="0.25" aria-label="Volume Slider" title="Adjust Volume">
+              <span class="volume-label" id="volume-label">25%</span>
+            </div>
+          </div>
+        </div>
+
+        <button id="breeze-toggle" class="chip-toggle" aria-pressed="true" title="Toggle falling woodland breeze">
+          <span class="chip-emoji">🍃</span>
+          <span class="chip-text">Breeze: ON</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Audio Element (Sourced directly from ./Apic/) -->
+  <audio id="bg-audio" loop preload="auto">
+    <source src="./Apic/Acorns on the Quad.mp3" type="audio/mpeg">
+    <source src="./Apic/Acorns_on_the_Quad.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+
+    <!-- HERO SECTION: BARRY'S SPECIAL SPOTLIGHT -->
+    <section class="barry-hero-section section-padding">
+      <div class="container">
+        
+        <div class="barry-hero-badge-wrap">
+          <span class="crown-badge">👑 The Honorary Grand Patriarch of Headington Hill</span>
+        </div>
+
+        <h1 class="barry-hero-title">Meet Barry The Legend</h1>
+        <p class="barry-hero-lead">
+          The roundest, friendliest, most delightfully chubby squirrel in Oxford Brookes University history!
+        </p>
+
+        <!-- SPECIAL BARRY FEATURE CARD (STRUCTURED LIKE SQUIRREL CARDS BUT WITH SPECIAL SPOTLIGHT STYLING) -->
+        <article class="squirrel-card barry-special-card" id="card-barry">
+          <div class="card-inner">
+            
+            <!-- Photo Showcase -->
+            <div class="card-media-wrap">
+              <div class="main-photo-stage barry-stage">
+                <img id="barry-main-img" 
+                     src="./Apic/Bary.jpg" 
+                     alt="Barry the squirrel eating a treat on the Oxford Brookes campus" 
+                     class="squirrel-main-photo" 
+                     data-zoomable="true">
+                <span class="photo-badge national-press-badge">The Guardian Press Archive</span>
+                <button class="zoom-trigger-btn" aria-label="Expand Barry photograph" data-target="barry-main-img">
+                  🔍 Zoom
+                </button>
+              </div>
+
+              <!-- Press & Photographic Attribution Box -->
+              <div class="barry-citation-card">
+                <div class="citation-header">
+                  <span class="citation-icon">📰</span>
+                  <strong>Archived Press Record</strong>
+                </div>
+                <p class="citation-source">
+                  <strong>Source:</strong> <em>The Guardian - UK</em><br>
+                  <strong>Article:</strong> <em>"Campus creatures: in pictures"</em><br>
+                  <strong>Published:</strong> Nov 2, 2012, 11:39 AM
+                </p>
+                <p class="citation-caption">
+                  <em>"Barry the squirrel, who has been tamed by the security guard at Oxford Brookes' Headington Hill site. Picture sent in by Mike Ratcliffe, university administrator and part-time student."</em>
+                </p>
+                <p class="citation-credit">
+                  📷 <strong>Photograph:</strong> Sent by Mike Ratcliffe
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Content & Storybook Profile -->
+            <div class="card-content">
+              <div class="squirrel-header-row">
+                <div>
+                  <span class="squirrel-rank-chip barry-legendary-chip">Supreme Campus Legend 🌟</span>
+                  <h2 class="squirrel-name barry-title-glow">Barry the Squirrel</h2>
+                </div>
+                <span class="acorn-collectible" data-acorn-id="barry" title="Click to collect Barry's golden honorary acorn!">
+                  <img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon collectible-acorn-icon">
+                </span>
+              </div>
+
+              <h3 class="squirrel-official-title">Chief Security Companion &amp; Supreme Biscuit Connoisseur</h3>
+
+              <div class="personality-block">
+                <h4 class="field-label">The Tale of Barry &amp; The Security Guard</h4>
+                <p class="personality-text story-text">
+                  Long before the other squirrels claimed their little territories in the hall garden, there was <strong>Barry</strong>—the undisputed king of Headington Hill. 
+                  Barry did not scamper away into the leafy treetops when people walked past. Instead, he waddled proudly down to the security lodge every single morning to report for duty!
+                </p>
+                <p class="personality-text story-text">
+                  The campus security guard at the Headington Hill site formed a legendary bond of trust with Barry, gently taming him with secret pocket treats, wholesome seeds, and warm digestive crumbs. 
+                  Soon, Barry became the official honorary guardian of the gates. Students, lecturers, and university administrators alike stopped in their tracks just to watch Barry sit upright on his chubby hind legs, 
+                  politely holding a walnut in both paws like an English gentleman attending high tea.
+                </p>
+              </div>
+
+              <div class="chubby-tribute-block">
+                <h4 class="field-label">The Anatomy of Pure Chonky Cuteness</h4>
+                <p class="chubby-text">
+                  Barry is famous for his adorably plump belly, his delightfully pudgy cheeks that could store half a dozen hazelnuts at once, and a coat so thick and plush he looked like a toasted marshmallow with a tail. 
+                  Whenever the autumn wind rustled through the oak trees, Barry didn't shiver—his magnificent roundness kept him warm all season long. His paws were tiny and polite, his eyes were bright as shiny black buttons, 
+                  and when he ran across the lawn, it wasn't a sprint; it was a rhythmic, cheerful waddle that brought joy to everyone having a stressful exam week.
+                </p>
+              </div>
+
+              <div class="haunt-block">
+                <h4 class="field-label">Favorite Campus Haunts</h4>
+                <p class="haunt-text">
+                  <span class="haunt-pin-icon">📍</span> The Front Security Lodge &amp; Barrier Post at Headington Hill Hall.<br>
+                  <span class="haunt-pin-icon">🌿</span> The sunny gravel driveway where treats mysteriously rolled his way.
+                </p>
+              </div>
+
+              <!-- Field Attributes & Stats -->
+              <div class="squirrel-spec-grid barry-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Chubbiness Factor:</span>
+                  <span class="spec-val">100 / 10 (Maximum Chonky) <img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon inline-acorn-icon"></span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Official BFF:</span>
+                  <span class="spec-val">Headington Hill Security Guard</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">National Fame:</span>
+                  <span class="spec-val">The Guardian UK Star (2012) ⭐</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Temperament:</span>
+                  <span class="spec-val">Gentle, Tame &amp; Very Hungry</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECTION: STATUS MISSING & COMMUNITY INQUIRY -->
+    <section class="missing-status-section section-padding" id="missing-bary-inquiry">
+      <div class="container">
+        
+        <div class="missing-poster-card">
+          
+          <div class="missing-corner-badge">
+            <span class="pulse-dot"></span>
+            <span class="missing-stamp-text">STATUS: "MISSING" 🔍</span>
+          </div>
+
+          <div class="missing-header text-center">
+            <h2 class="missing-title">Have You Seen Barry Anywhere?</h2>
+            <p class="missing-subtitle">
+              Headington Hill Campus Mystery &amp; Grand Adventure Notice
+            </p>
+          </div>
+
+          <div class="missing-body-grid">
+            
+            <div class="missing-portrait-col">
+              <div class="missing-frame">
+                <img src="./Apic/Bary.jpg" alt="Last known photograph of Barry the squirrel" class="missing-photo">
+                <span class="missing-caption-tag">Last Known Location: Headington Hill Security Post</span>
+              </div>
+            </div>
+
+            <div class="missing-text-col">
+              <div class="missing-narrative">
+                <p class="missing-p highlight-p">
+                  <strong>He's been gone for quite a while now...</strong>
+                </p>
+                <p class="missing-p">
+                  One crisp autumn day after a wonderful feast of acorns and biscuits at the guard lodge, Barry gave a twitch of his bushy tail, waddled past the barrier gate, and headed into the great canopy beyond. Days turned into weeks, and weeks turned into seasons—and our beloved chubby companion hasn't checked in with security!
+                </p>
+                
+                <h4 class="adventures-heading">What adventures has he got himself into this time?</h4>
+                <ul class="adventure-theories">
+                  <li>
+                    <span class="theory-icon">🏰</span>
+                    <div>
+                      <strong>The Secret Bodleian Library Society:</strong> Did Barry sneak into the Bodleian or Radcliffe Camera to read ancient manuscripts about the world's biggest acorns?
+                    </div>
+                  </li>
+                  <li>
+                    <span class="theory-icon">🚣</span>
+                    <div>
+                      <strong>Punting Down the River Cherwell:</strong> Locals whisper they saw a round, fluffy squirrel captaining a leaf-boat down towards Christ Church Meadow!
+                    </div>
+                  </li>
+                  <li>
+                    <span class="theory-icon">🥧</span>
+                    <div>
+                      <strong>High Tea in the Cotswolds:</strong> Did Barry discover an all-you-can-eat walnut pantry in a charming cottage garden up in Headington Village?
+                    </div>
+                  </li>
+                  <li>
+                    <span class="theory-icon">👑</span>
+                    <div>
+                      <strong>King of the High Canopy:</strong> Perhaps he is now quietly overseeing younger squirrels like Pipkin, Barnaby, and Lady Clementine from a luxury hollow-tree penthouse!
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="missing-callout-box">
+                  <span class="callout-sparkle">💡</span>
+                  <div>
+                    <strong>Junior Explorers &amp; Brookes Students:</strong> If you ever spot a particularly round, bold, and polite squirrel sitting outside the security post looking for a biscuit—say a warm hello! You might just have met the legendary Barry.
+                  </div>
+                </div>
+
+                <div class="missing-actions">
+                  <a href="index.html#meet-the-squirrels" class="btn btn-primary">
+                    <span>Visit His Canopy Friends</span>
+                    <span class="btn-arrow">→</span>
+                  </a>
+                  <a href="index.html" class="btn btn-secondary">
+                    <span>Back to Campus Field Guide</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close photo preview">✕</button>
+      <div class="lightbox-img-wrap">
+        <img id="lightbox-img" src="" alt="Expanded squirrel photograph">
+      </div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- CELEBRATION TOAST -->
+  <div class="toast-notification" id="toast" role="dialog" aria-live="polite">
+    <button class="toast-close-btn" id="toast-close-btn" aria-label="Close notification">✕</button>
+    <span class="toast-icon"><img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon toast-acorn-icon"></span>
+    <span class="toast-msg" id="toast-msg">Acorn collected!</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo"><img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon footer-acorn-icon"> Headington Hill Canopy Crew</span>
+        <p class="footer-desc">
+          Special Edition Memorial &amp; Legend Tribute Page dedicated to Barry the squirrel, tamed by Oxford Brookes security, immortalized by The Guardian (2012).
+        </p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-heading">Canopy Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Main Field Guide</a></li>
+          <li><a href="index.html#meet-the-squirrels">Meet the Squirrels</a></li>
+          <li><a href="index.html#territory-map">Campus Map &amp; Territory</a></li>
+          <li><a href="barry.html">Barry's Special Page</a></li>
+          <li><a href="#missing-bary-inquiry">Status: Missing Notice</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom text-center">
+      <p>© Oxford Brookes Headington Hill Wildlife Exploration Society • Photograph by Mike Ratcliffe via The Guardian UK (2012).</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

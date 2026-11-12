@@ -1,0 +1,2859 @@
+{
+  "format": "vectorcraft",
+  "version": 4,
+  "generator": "VectorCraft 0.24.1",
+  "pdfCompatible": true,
+  "pdf": {
+    "mime": "application/pdf",
+    "data": "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TlRjemtjOWQiPz48eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJ4bXAtd3JpdGVyIj48cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPjxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiAgeG1sbnM6eG1wVFBnPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvdC9wZy8iICB4bWxuczpwZGY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGRmLzEuMy8iID48ZGM6dGl0bGU+PHJkZjpBbHQ+PHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij4zNjBfRl8yMTU4ODMwMDk3X0xlS25Ud2g0UE44SVZyUWp1TFpaNzJpd05HdHNZdlRMLmpwZzwvcmRmOmxpPjwvcmRmOkFsdD48L2RjOnRpdGxlPjx4bXA6Q3JlYXRvclRvb2w+VmVjdG9yQ3JhZnQ8L3htcDpDcmVhdG9yVG9vbD48cGRmOlByb2R1Y2VyPlZlY3RvckNyYWZ0PC9wZGY6UHJvZHVjZXI+PHhtcDpNb2RpZnlEYXRlPjIwMjYtMTEtMTJUMjA6MzQ6NDQrMDA6MDA8L3htcDpNb2RpZnlEYXRlPjx4bXA6Q3JlYXRlRGF0ZT4yMDI2LTExLTEyVDIwOjM0OjQ0KzAwOjAwPC94bXA6Q3JlYXRlRGF0ZT48eG1wVFBnOk5QYWdlcz4xPC94bXBUUGc6TlBhZ2VzPjxkYzpmb3JtYXQ+YXBwbGljYXRpb24vcGRmPC9kYzpmb3JtYXQ+PHhtcE1NOkluc3RhbmNlSUQ+SlVVUDdZWVhVSzZrL0xNK1M4dmhWQT09PC94bXBNTTpJbnN0YW5jZUlEPjx4bXBNTTpEb2N1bWVudElEPkpVVVA3WVlYVUs2ay9MTStTOHZoVkE9PTwveG1wTU06RG9jdW1lbnRJRD48eG1wTU06UmVuZGl0aW9uQ2xhc3M+ZGVmYXVsdDwveG1wTU06UmVuZGl0aW9uQ2xhc3M+PHBkZjpQREZWZXJzaW9uPjEuNzwvcGRmOlBERlZlcnNpb24+PC9yZGY6RGVzY3JpcHRpb24+PC9yZGY6UkRGPjwveDp4bXBtZXRhPjw/eHBhY2tldCBlbmQ9InIiPz4KZW5kc3RyZWFtCmVuZG9iago3IDAgb2JqCjw8L1ZpZXdlclByZWZlcmVuY2VzPDwvRGlzcGxheURvY1RpdGxlIHRydWU+Pi9UeXBlL0NhdGFsb2cvUGFnZXMgMSAwIFIvTWV0YWRhdGEgNiAwIFI+PgplbmRvYmoKeHJlZgowIDgKMDAwMDAwMDAwMCA2NTUzNSBmDQowMDAwMDAwMDE2IDAwMDAwIG4NCjAwMDAwMDAwNjcgMDAwMDAgbg0KMDAwMDAwMDEyMCAwMDAwMCBuDQowMDAwMDAwMjU5IDAwMDAwIG4NCjAwMDAwMDMzMTcgMDAwMDAgbg0KMDAwMDAwMzUwMCAwMDAwMCBuDQowMDAwMDA0Njc5IDAwMDAwIG4NCnRyYWlsZXIKPDwvU2l6ZSA4L1Jvb3QgNyAwIFIvSW5mbyA1IDAgUi9JRFsoSlVVUDdZWVhVSzZrL0xNK1M4dmhWQT09KShKVVVQN1lZWFVLNmsvTE0rUzh2aFZBPT0pXT4+CnN0YXJ0eHJlZgo0NzgyCiUlRU9G"
+  },
+  "document": {
+    "version": 3,
+    "title": "360_F_2158830097_LeKnTwh4PN8IVrQjuLZZ72iwNGtsYvTL.jpg",
+    "units": "Points",
+    "rulers": "artboard",
+    "color_mode": "Rgb",
+    "artboards": [
+      {
+        "id": 1,
+        "name": "Artboard 1",
+        "rect": {
+          "x0": 0.0,
+          "y0": 0.0,
+          "x1": 391.0,
+          "y1": 360.0
+        },
+        "show_center_mark": false,
+        "show_cross_hairs": false
+      }
+    ],
+    "layers": [
+      {
+        "id": 1,
+        "name": "Layer 1",
+        "kind": {
+          "type": "layer",
+          "color": {
+            "Preset": 0
+          },
+          "template": false,
+          "printable": true,
+          "children": [
+            {
+              "id": 2,
+              "name": "360_F_2158830097_LeKnTwh4PN8IVrQjuLZZ72iwNGtsYvTL.jpg",
+              "visible": false,
+              "kind": {
+                "type": "image",
+                "key": "imge3858d98e5105ff2",
+                "width": 391,
+                "height": 360,
+                "xf": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "id": 7,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.4407112,
+                        "g": 0.37990445,
+                        "b": 0.37990445
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 1.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            74.03330891927084,
+                            70.4797554023342
+                          ],
+                          "in": [
+                            75.76901379135714,
+                            68.74407260065213
+                          ],
+                          "out": [
+                            73.67770632566993,
+                            70.83535347426032
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            74.46349820807256,
+                            69.13947117777037
+                          ],
+                          "in": [
+                            74.03051676116692,
+                            69.52892590603113
+                          ],
+                          "out": [
+                            78.74021806149591,
+                            65.2926810202112
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            87.4335015507319,
+                            64.27100570721342
+                          ],
+                          "in": [
+                            81.72926074410887,
+                            66.20638641290023
+                          ],
+                          "out": [
+                            91.78104970040317,
+                            62.7959345993898
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            100.166650390625,
+                            65.14642206900086
+                          ],
+                          "in": [
+                            97.07737039971511,
+                            65.19497847958637
+                          ],
+                          "out": [
+                            107.16498359620134,
+                            65.0364242890832
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            114.8402642925526,
+                            71.29402518464606
+                          ],
+                          "in": [
+                            110.65885163968957,
+                            65.14682585075167
+                          ],
+                          "out": [
+                            118.33913688074753,
+                            76.43780529656743
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            127.03084490740737,
+                            83.04271504980719
+                          ],
+                          "in": [
+                            123.3086853079252,
+                            79.4052903116156
+                          ],
+                          "out": [
+                            135.69404997221278,
+                            91.50870248869447
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            151.3885169188182,
+                            133.52454300793778
+                          ],
+                          "in": [
+                            146.73278389247528,
+                            122.11686325920003
+                          ],
+                          "out": [
+                            155.06019409256632,
+                            142.52104626572233
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            170.1623683206542,
+                            163.40415514618826
+                          ],
+                          "in": [
+                            163.70950687606867,
+                            156.79433673042195
+                          ],
+                          "out": [
+                            175.0682601921252,
+                            168.42937608364014
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            184.6411061590864,
+                            184.89402704612067
+                          ],
+                          "in": [
+                            180.39817253908376,
+                            178.81630280769835
+                          ],
+                          "out": [
+                            193.1854963083585,
+                            197.13330575365214
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            213.7666463216146,
+                            220.14641698273786
+                          ],
+                          "in": [
+                            204.93363793864648,
+                            208.51791213885903
+                          ],
+                          "out": [
+                            216.870844045803,
+                            224.2330403286056
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            234.5542837882328,
+                            238.94730475718958
+                          ],
+                          "in": [
+                            229.67982584301623,
+                            233.76996427042118
+                          ],
+                          "out": [
+                            247.3548706282823,
+                            252.5432773240303
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            251.63332519531252,
+                            305.6797472643134
+                          ],
+                          "in": [
+                            260.93606158216403,
+                            288.35400533014
+                          ],
+                          "out": [
+                            251.61301510085957,
+                            305.7175734952757
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            244.88870105815056,
+                            312.8142482966375
+                          ],
+                          "in": [
+                            244.94933221118876,
+                            312.7792996182816
+                          ],
+                          "out": [
+                            239.11093651281624,
+                            316.1446358052494
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            231.14886257164903,
+                            322.481066273078
+                          ],
+                          "in": [
+                            236.25303477014532,
+                            323.5633456380946
+                          ],
+                          "out": [
+                            226.2453313801717,
+                            321.4413304613014
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            209.67205276687937,
+                            315.9308597949422
+                          ],
+                          "in": [
+                            213.78378496949475,
+                            318.17926479587624
+                          ],
+                          "out": [
+                            204.23000816194556,
+                            312.9550044371306
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            191.89996744791668,
+                            303.5464057929592
+                          ],
+                          "in": [
+                            199.0449100114121,
+                            307.0260798379355
+                          ],
+                          "out": [
+                            174.20246787019062,
+                            294.92750796497364
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            141.4925110918408,
+                            259.1661294766853
+                          ],
+                          "in": [
+                            156.87808236711444,
+                            272.673700765583
+                          ],
+                          "out": [
+                            123.7093860942046,
+                            243.5536556629251
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            100.5999745686849,
+                            211.279753367829
+                          ],
+                          "in": [
+                            113.94050959036151,
+                            230.6531746200573
+                          ],
+                          "out": [
+                            85.16162134976341,
+                            188.85983393694607
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            78.74585190836589,
+                            140.54482587759466
+                          ],
+                          "in": [
+                            85.26853659645484,
+                            165.19250748768505
+                          ],
+                          "out": [
+                            74.98700472570971,
+                            126.34103203971729
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            71.36664225260417,
+                            107.8464226729946
+                          ],
+                          "in": [
+                            71.36664225260417,
+                            122.64409937012759
+                          ],
+                          "out": [
+                            71.36664225260417,
+                            92.73751556075018
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            76.08398132742842,
+                            80.21363319047151
+                          ],
+                          "in": [
+                            71.09803367641634,
+                            93.70508029336752
+                          ],
+                          "out": [
+                            77.00848414501068,
+                            77.71202632796111
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            75.61867067044703,
+                            69.71497961052285
+                          ],
+                          "in": [
+                            76.02867686564338,
+                            72.25979963287946
+                          ],
+                          "out": [
+                            75.12419169736248,
+                            66.64585527512763
+                          ],
+                          "kind": "Smooth"
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 6,
+              "kind": {
+                "type": "group",
+                "children": [
+                  {
+                    "id": 3,
+                    "appearance": {
+                      "items": [
+                        {
+                          "kind": "fill",
+                          "paint": {
+                            "type": "solid",
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.4407112,
+                              "g": 0.37990445,
+                              "b": 0.37990445
+                            }
+                          }
+                        },
+                        {
+                          "kind": "stroke",
+                          "paint": {
+                            "type": "none"
+                          },
+                          "width": 1.0
+                        }
+                      ]
+                    },
+                    "kind": {
+                      "type": "path",
+                      "path": {
+                        "subpaths": [
+                          {
+                            "anchors": [
+                              {
+                                "p": [
+                                  95.21756745917368,
+                                  66.7779226285389
+                                ],
+                                "out": [
+                                  95.31599236748258,
+                                  66.43342794011856
+                                ]
+                              },
+                              {
+                                "p": [
+                                  84.29759340760256,
+                                  44.06504252954807
+                                ],
+                                "in": [
+                                  85.48827567873657,
+                                  46.16654553739606
+                                ],
+                                "out": [
+                                  82.45989126489623,
+                                  40.821577270971645
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  74.88380838800495,
+                                  38.58793425479573
+                                ],
+                                "in": [
+                                  78.4958444655617,
+                                  38.63712585034153
+                                ],
+                                "out": [
+                                  72.84544586935422,
+                                  38.56017420410957
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  71.18677330385782,
+                                  43.20924353526354
+                                ],
+                                "in": [
+                                  72.43617978483547,
+                                  40.77421294025792
+                                ],
+                                "out": [
+                                  69.89968576737463,
+                                  45.71771261838733
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  66.86187093344128,
+                                  51.27160422795712
+                                ],
+                                "in": [
+                                  67.72451587256178,
+                                  49.26932283494589
+                                ],
+                                "out": [
+                                  63.48940938554179,
+                                  59.09940996792886
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  56.14258178644205,
+                                  76.26035996051878
+                                ],
+                                "in": [
+                                  64.58667321287305,
+                                  72.47458452576912
+                                ],
+                                "out": [
+                                  46.60944665925639,
+                                  80.53439099098367
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  30.057113656136067,
+                                  95.89216756970686
+                                ],
+                                "in": [
+                                  38.22573939231858,
+                                  90.10021094644961
+                                ],
+                                "out": [
+                                  20.31039001682332,
+                                  102.80307307094944
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  7.566737645824842,
+                                  126.23875982415112
+                                ],
+                                "in": [
+                                  13.692277391539374,
+                                  116.36993300220388
+                                ],
+                                "out": [
+                                  4.820431742958592,
+                                  130.66331969651824
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  6.026301871924318,
+                                  147.6508350367254
+                                ],
+                                "in": [
+                                  3.317929346687813,
+                                  143.17009868883918
+                                ],
+                                "out": [
+                                  12.09475423135289,
+                                  157.6904934695819
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  24.139676657473366,
+                                  164.57587488734566
+                                ],
+                                "in": [
+                                  13.441693808958092,
+                                  158.9989219718263
+                                ],
+                                "out": [
+                                  27.74197358506731,
+                                  166.4537840817598
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  36.62711281636946,
+                                  171.25754087961096
+                                ],
+                                "in": [
+                                  33.46680237747869,
+                                  169.97231902245142
+                                ],
+                                "out": [
+                                  38.430815857723935,
+                                  171.99106330324588
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  46.5854272123934,
+                                  173.51114154501786
+                                ],
+                                "in": [
+                                  44.07198563027818,
+                                  172.5779975406776
+                                ],
+                                "out": [
+                                  51.0720275747849,
+                                  175.17684336909338
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  59.66508614376858,
+                                  177.5956000305005
+                                ],
+                                "in": [
+                                  54.922338718137425,
+                                  176.9124097793784
+                                ],
+                                "out": [
+                                  61.28169602018685,
+                                  177.82847182575316
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  68.9274579259467,
+                                  182.27261951145715
+                                ],
+                                "in": [
+                                  66.85096432097949,
+                                  181.62778938314892
+                                ],
+                                "out": [
+                                  74.32010308011527,
+                                  183.94724064121408
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  75.80808258432563,
+                                  195.712440976253
+                                ],
+                                "in": [
+                                  75.80808258432563,
+                                  191.08671342183433
+                                ],
+                                "out": [
+                                  78.7481796023013,
+                                  208.6490473073655
+                                ]
+                              },
+                              {
+                                "p": [
+                                  49.32941266689056,
+                                  205.8793249190613
+                                ],
+                                "in": [
+                                  56.82038773833352,
+                                  206.00384513498722
+                                ],
+                                "out": [
+                                  42.710064450278374,
+                                  205.76929349306397
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  28.0887788747848,
+                                  209.42232621964948
+                                ],
+                                "in": [
+                                  33.91342821296286,
+                                  206.75945166856565
+                                ],
+                                "out": [
+                                  19.47784033755477,
+                                  213.3590179860433
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  14.447352316914337,
+                                  232.05344209699493
+                                ],
+                                "in": [
+                                  10.516914350925312,
+                                  221.75717723032827
+                                ],
+                                "out": [
+                                  18.835293088960828,
+                                  243.54819174046574
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  37.38463972405269,
+                                  228.09013328967552
+                                ],
+                                "in": [
+                                  31.696389387709353,
+                                  230.30354847113537
+                                ],
+                                "out": [
+                                  43.14173931825794,
+                                  225.8499274461363
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  51.50196985351379,
+                                  230.0698943715122
+                                ],
+                                "in": [
+                                  45.84351114578122,
+                                  228.7659711409725
+                                ],
+                                "out": [
+                                  60.433446732422816,
+                                  232.12804497169643
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  70.26249800573116,
+                                  243.54300260643225
+                                ],
+                                "in": [
+                                  63.99628789256488,
+                                  240.48988944942224
+                                ],
+                                "out": [
+                                  77.77392563784645,
+                                  247.2028285805651
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  90.05172419555163,
+                                  245.63590751885567
+                                ],
+                                "in": [
+                                  83.5983507337972,
+                                  244.6609276590795
+                                ],
+                                "out": [
+                                  90.4239418396173,
+                                  245.69214240260573
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  93.86351339916737,
+                                  250.60767372011892
+                                ],
+                                "in": [
+                                  93.73457157320394,
+                                  250.0201177931339
+                                ],
+                                "out": [
+                                  94.60844054899498,
+                                  254.00212202099377
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  87.36135578549512,
+                                  259.02439927333694
+                                ],
+                                "in": [
+                                  90.40266862791407,
+                                  257.6725700372104
+                                ]
+                              },
+                              {
+                                "p": [
+                                  86.54320225367806,
+                                  259.6910659400036
+                                ],
+                                "out": [
+                                  79.05228981137188,
+                                  262.84510900644176
+                                ]
+                              },
+                              {
+                                "p": [
+                                  79.04298497753639,
+                                  282.1309456756759
+                                ],
+                                "in": [
+                                  76.94513683191305,
+                                  274.3227868109072
+                                ],
+                                "out": [
+                                  81.99692613415166,
+                                  293.12546969599157
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  96.53391300252444,
+                                  307.48616742646055
+                                ],
+                                "in": [
+                                  90.94597622915322,
+                                  299.4146440687273
+                                ],
+                                "out": [
+                                  102.73952880032935,
+                                  316.44990035554343
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  88.63173080358243,
+                                  323.29226580473403
+                                ],
+                                "in": [
+                                  98.80717639278409,
+                                  322.2068960241318
+                                ],
+                                "out": [
+                                  83.37512423365841,
+                                  323.8529647804688
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  74.07137946236149,
+                                  329.664392413178
+                                ],
+                                "in": [
+                                  78.41328901834122,
+                                  326.8920415485266
+                                ],
+                                "out": [
+                                  72.00090124329215,
+                                  330.9864125996587
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  61.138452525960325,
+                                  345.588377107565
+                                ],
+                                "in": [
+                                  56.47657999246398,
+                                  342.1021129971963
+                                ],
+                                "out": [
+                                  65.65705089067485,
+                                  348.9674972346999
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  75.24325471923095,
+                                  349.89302100414386
+                                ],
+                                "in": [
+                                  70.0744749840103,
+                                  348.30278471176126
+                                ],
+                                "out": [
+                                  93.14993404618701,
+                                  355.40222294357744
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  132.58919677755537,
+                                  353.29908038864664
+                                ],
+                                "in": [
+                                  113.43163536339877,
+                                  353.29908038864664
+                                ],
+                                "out": [
+                                  147.8486800362818,
+                                  353.29908038864664
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  181.51037236635312,
+                                  352.8535929717117
+                                ],
+                                "in": [
+                                  166.86259560933362,
+                                  354.53272187509225
+                                ],
+                                "out": [
+                                  188.13204524648577,
+                                  352.09452608352785
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  199.04362435751847,
+                                  348.64670691396793
+                                ],
+                                "in": [
+                                  193.16727073423797,
+                                  350.1492535286557
+                                ],
+                                "out": [
+                                  204.22375447858428,
+                                  347.32218026427586
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  221.87033374144227,
+                                  346.1360523260887
+                                ],
+                                "in": [
+                                  216.11424432304062,
+                                  349.7317198268378
+                                ],
+                                "out": [
+                                  224.69857555914356,
+                                  344.3693290441922
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  233.54876328888213,
+                                  336.06332586684306
+                                ],
+                                "in": [
+                                  231.70084480317442,
+                                  338.2240647043403
+                                ],
+                                "out": [
+                                  235.0015885919581,
+                                  334.3645625930655
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  239.86456204093253,
+                                  328.8061623568424
+                                ],
+                                "in": [
+                                  237.5325718554949,
+                                  328.5470633184546
+                                ]
+                              }
+                            ],
+                            "closed": false
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "id": 4,
+                    "appearance": {
+                      "items": [
+                        {
+                          "kind": "fill",
+                          "paint": {
+                            "type": "solid",
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.4407112,
+                              "g": 0.37990445,
+                              "b": 0.37990445
+                            }
+                          }
+                        },
+                        {
+                          "kind": "stroke",
+                          "paint": {
+                            "type": "none"
+                          },
+                          "width": 1.0
+                        }
+                      ]
+                    },
+                    "kind": {
+                      "type": "path",
+                      "path": {
+                        "subpaths": [
+                          {
+                            "anchors": [
+                              {
+                                "p": [
+                                  157.14311886900055,
+                                  146.26444577836423
+                                ],
+                                "out": [
+                                  156.52778365640424,
+                                  147.4951162035567
+                                ]
+                              },
+                              {
+                                "p": [
+                                  162.51176745326802,
+                                  148.09129561697168
+                                ],
+                                "in": [
+                                  161.9656928848384,
+                                  147.91404405419584
+                                ],
+                                "out": [
+                                  162.62911163605995,
+                                  148.12938462712708
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  167.69606840098174,
+                                  150.78305779290486
+                                ],
+                                "in": [
+                                  167.6735033062349,
+                                  150.76612547492562
+                                ],
+                                "out": [
+                                  173.71198977559382,
+                                  155.29726412776537
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  186.961845283643,
+                                  163.18551637252216
+                                ],
+                                "in": [
+                                  180.5801593972412,
+                                  158.8671980857802
+                                ],
+                                "out": [
+                                  193.81404622731802,
+                                  167.82221977131422
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  214.80749372411307,
+                                  185.5897903433977
+                                ],
+                                "in": [
+                                  210.01148167134411,
+                                  179.18155633860786
+                                ],
+                                "out": [
+                                  219.415114075837,
+                                  191.74630310737876
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  233.8931366608002,
+                                  200.90200361216074
+                                ],
+                                "in": [
+                                  233.8931366608002,
+                                  192.7551207045322
+                                ],
+                                "out": [
+                                  233.8931366608002,
+                                  190.59295594667577
+                                ]
+                              },
+                              {
+                                "p": [
+                                  230.7985606034785,
+                                  176.70828620994726
+                                ],
+                                "in": [
+                                  232.90178853336812,
+                                  186.13267718838333
+                                ],
+                                "out": [
+                                  229.7073560510225,
+                                  171.81868856166255
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  221.66411528161794,
+                                  155.8979868969642
+                                ],
+                                "in": [
+                                  223.23215620921127,
+                                  160.1709609895128
+                                ],
+                                "out": [
+                                  219.3800042365534,
+                                  149.67369316309797
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  210.28817559438025,
+                                  137.9460749704055
+                                ],
+                                "in": [
+                                  215.2032651755854,
+                                  142.5520874151454
+                                ],
+                                "out": [
+                                  198.14142587527576,
+                                  126.56315316501735
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  196.92424836044003,
+                                  93.77054771115797
+                                ],
+                                "in": [
+                                  198.48383540713536,
+                                  102.05423760382445
+                                ],
+                                "out": [
+                                  196.56939819849023,
+                                  91.88577397814751
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  197.15758006905762,
+                                  94.83456834587449
+                                ],
+                                "in": [
+                                  201.60757732103139,
+                                  120.90255523107156
+                                ],
+                                "out": [
+                                  196.90878547464246,
+                                  85.07998233339107
+                                ]
+                              },
+                              {
+                                "p": [
+                                  201.04555703344465,
+                                  66.31578993760253
+                                ],
+                                "in": [
+                                  197.7425205936635,
+                                  75.4974998710858
+                                ],
+                                "out": [
+                                  205.77119656528478,
+                                  53.17955840561472
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  224.61422731227208,
+                                  32.58022690151881
+                                ],
+                                "in": [
+                                  214.7610237396663,
+                                  42.28945378182968
+                                ],
+                                "out": [
+                                  238.96579669862146,
+                                  18.438365096491736
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  276.3729124081865,
+                                  3.4659819603508595
+                                ],
+                                "in": [
+                                  256.28288992936984,
+                                  6.923034112129649
+                                ],
+                                "out": [
+                                  287.8741956985207,
+                                  1.4868634108822565
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  311.032732011695,
+                                  4.390247342223603
+                                ],
+                                "in": [
+                                  299.60108484427514,
+                                  2.250706237337629
+                                ],
+                                "out": [
+                                  328.9892108283107,
+                                  7.750972525962354
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  360.01860333309537,
+                                  27.03466986807416
+                                ],
+                                "in": [
+                                  346.52534322948617,
+                                  14.451706379009678
+                                ],
+                                "out": [
+                                  371.8186810499983,
+                                  38.038678235199434
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  384.51152136489964,
+                                  67.7021791959637
+                                ],
+                                "in": [
+                                  380.3128499361786,
+                                  52.12177870841579
+                                ],
+                                "out": [
+                                  388.76514113886805,
+                                  83.48648161763924
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  383.5872736119228,
+                                  115.76379394993923
+                                ],
+                                "in": [
+                                  391.8772384499542,
+                                  100.89611154063493
+                                ],
+                                "out": [
+                                  376.1304535135471,
+                                  129.13726840635138
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  348.00320625543736,
+                                  141.18099499251213
+                                ],
+                                "in": [
+                                  363.07221732230005,
+                                  138.46458366824302
+                                ],
+                                "out": [
+                                  345.63028807114466,
+                                  141.60874846609948
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  344.76826860443487,
+                                  134.71117257719473
+                                ],
+                                "in": [
+                                  346.0152831366013,
+                                  136.7792216702147
+                                ],
+                                "out": [
+                                  341.4683592932263,
+                                  129.23860246509096
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  331.82862377380013,
+                                  120.84724473579134
+                                ],
+                                "in": [
+                                  337.8185083639583,
+                                  123.55747566175862
+                                ],
+                                "out": [
+                                  320.6461454218435,
+                                  115.78753144711975
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  300.86583043999076,
+                                  130.08986329672695
+                                ],
+                                "in": [
+                                  308.4499988394788,
+                                  121.15574351162005
+                                ],
+                                "out": [
+                                  295.01297223648567,
+                                  136.98450665391954
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  294.3959903957775,
+                                  155.04492283391554
+                                ],
+                                "in": [
+                                  291.5673932947106,
+                                  146.1747237418066
+                                ],
+                                "out": [
+                                  295.7726046745435,
+                                  159.36184825291164
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  301.7901134507594,
+                                  166.1360721585966
+                                ],
+                                "in": [
+                                  299.4192394544235,
+                                  162.37731920348654
+                                ],
+                                "out": [
+                                  313.71387974517995,
+                                  185.03985695039069
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  329.98009301005465,
+                                  226.67521668116643
+                                ],
+                                "in": [
+                                  327.04670764440885,
+                                  204.07262983775271
+                                ],
+                                "out": [
+                                  332.65973638300864,
+                                  247.32264771968508
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  320.737474449119,
+                                  287.2143788326321
+                                ],
+                                "in": [
+                                  332.05661326005907,
+                                  269.18071956378316
+                                ],
+                                "out": [
+                                  311.1096287666162,
+                                  302.553468796217
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  279.1456909249088,
+                                  319.56354379590675
+                                ],
+                                "in": [
+                                  295.57887241599525,
+                                  312.56727523004156
+                                ],
+                                "out": [
+                                  271.4465897791631,
+                                  322.84136187152495
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  255.11486151180122,
+                                  326.4955077166085
+                                ],
+                                "in": [
+                                  263.30810398577245,
+                                  324.87413715091986
+                                ],
+                                "out": [
+                                  249.61804942424314,
+                                  327.5832784437902
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  238.4781551536755,
+                                  328.8061623568424
+                                ],
+                                "in": [
+                                  244.063352395306,
+                                  328.35476446925213
+                                ]
+                              }
+                            ],
+                            "closed": false
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "id": 5,
+                    "appearance": {
+                      "items": [
+                        {
+                          "kind": "fill",
+                          "paint": {
+                            "type": "solid",
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.4407112,
+                              "g": 0.37990445,
+                              "b": 0.37990445
+                            }
+                          }
+                        },
+                        {
+                          "kind": "stroke",
+                          "paint": {
+                            "type": "none"
+                          },
+                          "width": 1.0
+                        }
+                      ]
+                    },
+                    "kind": {
+                      "type": "path",
+                      "path": {
+                        "subpaths": [
+                          {
+                            "anchors": [
+                              {
+                                "p": [
+                                  95.67970896455799,
+                                  64.92939186479343
+                                ],
+                                "out": [
+                                  95.75283717521145,
+                                  64.68562573820265
+                                ]
+                              },
+                              {
+                                "p": [
+                                  101.47800404098365,
+                                  59.24662858384436
+                                ],
+                                "in": [
+                                  99.97106885912773,
+                                  61.62185907294435
+                                ],
+                                "out": [
+                                  103.43545063089864,
+                                  56.16130223594877
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  108.04171299760864,
+                                  48.87034193612434
+                                ],
+                                "in": [
+                                  105.67747348882446,
+                                  51.23458250180955
+                                ],
+                                "out": [
+                                  111.48040903900929,
+                                  45.431644357501526
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  125.02501625714741,
+                                  38.58793425479573
+                                ],
+                                "in": [
+                                  120.78524146776012,
+                                  38.54208199111153
+                                ],
+                                "out": [
+                                  129.7332060398965,
+                                  38.638852327126884
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  134.9608202196384,
+                                  45.51989872640043
+                                ],
+                                "in": [
+                                  134.9608202196384,
+                                  40.72273350381562
+                                ],
+                                "out": [
+                                  134.9608202196384,
+                                  62.993180462116
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  142.81706715110874,
+                                  84.33889436853737
+                                ],
+                                "in": [
+                                  133.25426851694263,
+                                  69.95431814258689
+                                ],
+                                "out": [
+                                  146.92339700376687,
+                                  90.51572784942007
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  152.67585088069558,
+                                  98.9559175420801
+                                ],
+                                "in": [
+                                  149.19368582357353,
+                                  91.68410487768354
+                                ],
+                                "out": [
+                                  160.58159310275445,
+                                  115.46549576963719
+                                ],
+                                "kind": "Smooth"
+                              },
+                              {
+                                "p": [
+                                  158.6295242303787,
+                                  148.16444730424314
+                                ],
+                                "in": [
+                                  158.6295242303787,
+                                  129.3269861052592
+                                ]
+                              }
+                            ],
+                            "closed": false
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "clip": false
+              }
+            },
+            {
+              "id": 8,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.4407112,
+                        "g": 0.37990445,
+                        "b": 0.37990445
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            203.14091268886992,
+                            78.83589085322326
+                          ],
+                          "out": [
+                            201.77517175538333,
+                            80.30906301828057
+                          ]
+                        },
+                        {
+                          "p": [
+                            199.664711300345,
+                            84.16922545812234
+                          ],
+                          "in": [
+                            200.5987695282121,
+                            82.11394887102888
+                          ],
+                          "out": [
+                            195.53306227200014,
+                            93.26039478857768
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            202.77011645962395,
+                            112.16922545812234
+                          ],
+                          "in": [
+                            196.87702077495416,
+                            105.37824613247479
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 9,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.4407112,
+                        "g": 0.37990445,
+                        "b": 0.37990445
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            235.3409147233751,
+                            194.90256031733466
+                          ],
+                          "in": [
+                            239.13938168277915,
+                            197.5937543958538
+                          ],
+                          "out": [
+                            233.01997343531636,
+                            193.2581854898663
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            229.20757325202095,
+                            189.03588144363673
+                          ],
+                          "in": [
+                            231.08715833942088,
+                            191.15682824483525
+                          ],
+                          "out": [
+                            223.11554749314428,
+                            182.16156506779114
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            217.20757325202095,
+                            164.76921884598048
+                          ],
+                          "in": [
+                            221.1223424004076,
+                            172.8999748189824
+                          ],
+                          "out": [
+                            211.8935632873483,
+                            153.73231816981666
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            201.74089844733345,
+                            131.43588551264716
+                          ],
+                          "in": [
+                            205.220191755009,
+                            143.25052760958008
+                          ],
+                          "out": [
+                            198.50097717994265,
+                            120.43407945277332
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            196.67424805670845,
+                            97.56922698400132
+                          ],
+                          "in": [
+                            196.35387793688847,
+                            109.0685009885865
+                          ],
+                          "out": [
+                            196.89279852803665,
+                            89.72463849664034
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            200.14090251634386,
+                            74.36922494949611
+                          ],
+                          "in": [
+                            197.51316993855792,
+                            81.80991292830304
+                          ],
+                          "out": [
+                            219.60193432563048,
+                            19.263364230386593
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            238.27424398769804,
+                            153.30255421381904
+                          ],
+                          "in": [
+                            229.77228872144983,
+                            125.15794096891186
+                          ],
+                          "out": [
+                            242.8802808294948,
+                            168.550238004723
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            248.14090251634386,
+                            199.96923105301173
+                          ],
+                          "in": [
+                            279.78672703409006,
+                            203.0854043876977
+                          ],
+                          "out": [
+                            243.4843497105356,
+                            199.51069897473138
+                          ],
+                          "kind": "Smooth"
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "swatches": [
+      {
+        "name": "[None]",
+        "paint": {
+          "type": "none"
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "White",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Black",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Red",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.92941177,
+            "g": 0.10980392,
+            "b": 0.14117648
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Orange Red",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.94509804,
+            "g": 0.3529412,
+            "b": 0.14117648
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Orange",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.96862745,
+            "g": 0.5764706,
+            "b": 0.11764706
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Amber",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.9843137,
+            "g": 0.6901961,
+            "b": 0.23137255
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Yellow",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.9882353,
+            "g": 0.93333334,
+            "b": 0.12941177
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Yellow Green",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.8509804,
+            "g": 0.8784314,
+            "b": 0.12941177
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Lime",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.54901963,
+            "g": 0.7764706,
+            "b": 0.24705882
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Green",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.22352941,
+            "g": 0.70980394,
+            "b": 0.2901961
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Emerald",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.0,
+            "g": 0.57254905,
+            "b": 0.27058825
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Teal",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.0,
+            "g": 0.40784314,
+            "b": 0.21568628
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Aqua",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.13333334,
+            "g": 0.70980394,
+            "b": 0.4509804
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Cyan Green",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.0,
+            "g": 0.6627451,
+            "b": 0.6156863
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Cyan",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.16078432,
+            "g": 0.67058825,
+            "b": 0.8862745
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Azure",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.0,
+            "g": 0.44313726,
+            "b": 0.7372549
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Blue",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.18039216,
+            "g": 0.19215687,
+            "b": 0.57254905
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Indigo",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.105882354,
+            "g": 0.078431375,
+            "b": 0.39215687
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Violet",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.4,
+            "g": 0.1764706,
+            "b": 0.5686275
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Purple",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.5764706,
+            "g": 0.15294118,
+            "b": 0.56078434
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Magenta",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.61960787,
+            "g": 0.0,
+            "b": 0.3647059
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Rose",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.83137256,
+            "g": 0.078431375,
+            "b": 0.3529412
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Pink",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.92941177,
+            "g": 0.11764706,
+            "b": 0.4745098
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Brown",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.78039217,
+            "g": 0.69803923,
+            "b": 0.6
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Tan",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.6,
+            "g": 0.5254902,
+            "b": 0.45882353
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Coffee",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.4509804,
+            "g": 0.3882353,
+            "b": 0.34117648
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Chocolate",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.3254902,
+            "g": 0.2784314,
+            "b": 0.25490198
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Sand",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.7764706,
+            "g": 0.6117647,
+            "b": 0.42745098
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Copper",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.6509804,
+            "g": 0.4862745,
+            "b": 0.32156864
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Rust",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.54901963,
+            "g": 0.38431373,
+            "b": 0.22352941
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Walnut",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.45882353,
+            "g": 0.29803923,
+            "b": 0.14117648
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Espresso",
+        "paint": {
+          "type": "solid",
+          "color": {
+            "model": "rgb",
+            "r": 0.3764706,
+            "g": 0.21960784,
+            "b": 0.07450981
+          }
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "White, Black",
+        "paint": {
+          "type": "gradient",
+          "gradient": {
+            "kind": "Linear",
+            "stops": [
+              {
+                "offset": 0.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              },
+              {
+                "offset": 1.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              }
+            ]
+          },
+          "angle": 0.0
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Radial White, Black",
+        "paint": {
+          "type": "gradient",
+          "gradient": {
+            "kind": "Radial",
+            "stops": [
+              {
+                "offset": 0.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              },
+              {
+                "offset": 1.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              }
+            ]
+          },
+          "angle": 0.0
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Sunset",
+        "paint": {
+          "type": "gradient",
+          "gradient": {
+            "kind": "Linear",
+            "stops": [
+              {
+                "offset": 0.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 0.9843137,
+                  "g": 0.6901961,
+                  "b": 0.23137255
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              },
+              {
+                "offset": 1.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 0.83137256,
+                  "g": 0.078431375,
+                  "b": 0.3529412
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              }
+            ]
+          },
+          "angle": 0.0
+        },
+        "global": false,
+        "spot": false
+      },
+      {
+        "name": "Ocean",
+        "paint": {
+          "type": "gradient",
+          "gradient": {
+            "kind": "Linear",
+            "stops": [
+              {
+                "offset": 0.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 0.16078432,
+                  "g": 0.67058825,
+                  "b": 0.8862745
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              },
+              {
+                "offset": 1.0,
+                "color": {
+                  "model": "rgb",
+                  "r": 0.18039216,
+                  "g": 0.19215687,
+                  "b": 0.57254905
+                },
+                "opacity": 1.0,
+                "midpoint": 0.5
+              }
+            ]
+          },
+          "angle": 0.0
+        },
+        "global": false,
+        "spot": false
+      }
+    ],
+    "swatch_groups": [
+      {
+        "name": "Grays",
+        "swatches": [
+          {
+            "name": "K=90",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.9
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=80",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.8
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=70",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.7
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=60",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.6
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=50",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.5
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=40",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.4
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=30",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.3
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=20",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.2
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "K=10",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "gray",
+                "k": 0.1
+              }
+            },
+            "global": false,
+            "spot": false
+          }
+        ]
+      },
+      {
+        "name": "Brights",
+        "swatches": [
+          {
+            "name": "Bright Red",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "rgb",
+                "r": 1.0,
+                "g": 0.11372549,
+                "b": 0.14509805
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "Bright Yellow",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "rgb",
+                "r": 1.0,
+                "g": 0.9019608,
+                "b": 0.0
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "Bright Green",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "rgb",
+                "r": 0.0,
+                "g": 0.9019608,
+                "b": 0.4627451
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "Bright Blue",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "rgb",
+                "r": 0.16078432,
+                "g": 0.4745098,
+                "b": 1.0
+              }
+            },
+            "global": false,
+            "spot": false
+          },
+          {
+            "name": "Bright Violet",
+            "paint": {
+              "type": "solid",
+              "color": {
+                "model": "rgb",
+                "r": 0.8352941,
+                "g": 0.0,
+                "b": 0.9764706
+              }
+            },
+            "global": false,
+            "spot": false
+          }
+        ]
+      }
+    ],
+    "graphic_styles": [
+      {
+        "name": "Default Graphic Style",
+        "appearance": {
+          "items": [
+            {
+              "kind": "fill",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0
+                }
+              }
+            },
+            {
+              "kind": "stroke",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0
+                }
+              },
+              "width": 1.0
+            }
+          ]
+        },
+        "id": 1,
+        "unit_box": true
+      },
+      {
+        "name": "Black Outline",
+        "appearance": {
+          "items": [
+            {
+              "kind": "fill",
+              "paint": {
+                "type": "none"
+              }
+            },
+            {
+              "kind": "stroke",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0
+                }
+              },
+              "width": 1.0
+            }
+          ]
+        },
+        "id": 2,
+        "unit_box": true
+      },
+      {
+        "name": "Heavy Ink",
+        "appearance": {
+          "items": [
+            {
+              "kind": "fill",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.105882354,
+                  "g": 0.078431375,
+                  "b": 0.39215687
+                }
+              }
+            },
+            {
+              "kind": "stroke",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0
+                }
+              },
+              "width": 4.0
+            }
+          ]
+        },
+        "id": 3,
+        "unit_box": true
+      },
+      {
+        "name": "Sunshine",
+        "appearance": {
+          "items": [
+            {
+              "kind": "fill",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.9843137,
+                  "g": 0.6901961,
+                  "b": 0.23137255
+                }
+              }
+            },
+            {
+              "kind": "stroke",
+              "paint": {
+                "type": "solid",
+                "color": {
+                  "model": "rgb",
+                  "r": 0.94509804,
+                  "g": 0.3529412,
+                  "b": 0.14117648
+                }
+              },
+              "width": 2.0
+            }
+          ]
+        },
+        "id": 4,
+        "unit_box": true
+      }
+    ],
+    "symbols": [],
+    "guides": [],
+    "grid": {
+      "spacing": 72.0,
+      "subdivisions": 8
+    },
+    "raster_effects_ppi": 72.0,
+    "images": {},
+    "next_id": 10,
+    "metadata": {
+      "author": "",
+      "authorTitle": "",
+      "description": "",
+      "keywords": [],
+      "rating": 0,
+      "copyrightStatus": "unknown",
+      "copyrightNotice": "",
+      "copyrightUrl": "",
+      "created": 1794515684,
+      "modified": 1794515684
+    },
+    "last_view": {
+      "name": "",
+      "center": {
+        "x": 228.74098789108035,
+        "y": 156.10777805161098
+      },
+      "zoom": 0.6667000000000001,
+      "rotation": 0.0
+    }
+  },
+  "images": {
+    "imge3858d98e5105ff2": {
+      "mime": "image/jpeg",
+      "blob": [
+        0,
+        11424
+      ]
+    }
+  }
+}
+ VCBLOBS ˇÿˇ‡ JFIF      ˇ‚ÿICC_PROFILE   »    0  mntrRGB XYZ ‡        acsp                             ˆ÷     ”-                                                   	desc      $rXYZ     gXYZ  (   bXYZ  <   wtpt  P   rTRC  d   (gTRC  d   (bTRC  d   (cprt  å   <mluc          enUS       s R G BXYZ       o¢  8ı  êXYZ       bô  ∑Ö  ⁄XYZ       $†  Ñ  ∂œXYZ       ˆ÷     ”-para        ff  Úß  Y  –  
+[        mluc          enUS        G o o g l e   I n c .   2 0 1 6ˇ€ C 	
+
+			
+
+		
+ˇ€ C	ˇ¿ há" ˇƒ             	ˇƒ U     "2BRbrÇ!1í¢≤#$3ACQSacqsÅ¬“4ë°¡DÉì£≥√—‚%6FdtuÑ±”Úˇƒ             ˇƒ 6     1!AQqaë°¡—"Å±·2Ò#3CRí¢ˇ⁄   ? ˙¶                                  1fLã3ì&…j;ßR›u %(O∆™´»B∏„ÑÌé◊W`‡®?•§'w¬ﬁ⁄‹jvyŒz)ÎóW‘,£⁄≠,æ˛’•ç≈Ùª#ü€ƒúÍ™' i˜Ï÷ÀÃ5U"Ìã !‘”∆”K„úÛ[‘¢•‚¨Õ«8≈JMÛ»´*˛™¬∏¶˝öy]ÌF™îÈNîÓëõù©yÂo´ˆ^‰¢€d¯‹œËΩﬂ±in|)∞<MIµ⁄nÛ‘ü"∏¥4ö˘ ’ËöÏÆèVï§DÏÁ?p¸≠ïÙ©Ì¸ﬁÈ%—/\ŒΩ=ú√·¨Íﬂ¶DÈˇ K˛Ø˚n”ˇ ú_Â2cp≥∏&æ⁄¡1‘ü¢û§˙Õê1,s_ˆy/c+¿pÁˇ RÒóπe`p∞√ÆxÆXN„=&ûmﬂ mVé_uNóÔO€ó—ôƒzI‘üH® ⁄ß¥ó∞˛Õ>´ÿ÷´≥˛©«£˜/≈£Xq\uéÛ
+z6m’ÙπÍû±Û—áûäÚdEyl:ûKç©IR{…$/ü9çÜ÷Ñ9v≠÷*~}5´∫øtßú£≠mµ4Â∫‚w≠ˇ üπ«πŸJ±ﬂo4˚ûÔ?\†D∏Ñ6≈5D+¬ïdûΩ⁄"Bı0∫ı^¶Ôù§ñ§™öì]¥$v◊Tn„€£$—∏µØi>≈x∏øﬂ°˙ ∏                                    4¨¡Õ9óVÔ∫ΩWÊ:ük¬i^ ÔÂOZßÖõπ≈nÀÿ£m’n]ˆB54≈U‚a?(Á·O;Í*}ﬁÔsæ‹^ªﬁfª.\ïmu’´zøï=R;ã„ë≥ˇ fÜ˘˘/w‹H|WŸVØ∫üõˆ]˛√è≥?f•9xóV°%ZòÄ ¥∞è˛≈uïËöê≠Y◊õ©QÊŸ>£Fùº:I(Æ f@         oŸ{ù8ª)[í´ï©*Ò¬êΩ‘ßË’ o’Íö3PØV⁄j•)d—äΩΩ+ò:u¢ö/Ãl1èÌﬁcó^5¥”¬"ª∫Û
+Î'‚ÎSt€äcæ›ÂÕõÕí‡ÏIlWq‘z™È'™¢◊Â&q[sË˘¥nÚ;zùç´u‘¸£7«Ni8¬q»ﬁeF∂È˘>úüq∆0ÿÁZÜ˙~kØ5ﬁI‡DG@           5s"]aÔ“nígKW
+=Uß[û-™WU4Â}iß8´L◊Ã[º’MìãÓM/V§∑ı0€}î§„b›>Iπr\:ùú;∏ƒ`Í≈®«õœBÒ±Âó	•Ωˆ≠8˘≈MÑ•iM≈)ˆV>—)Âß≠ ÌN4ñ&0‹òŒ°÷]MB—]TRU‰≠*mÿ‚41vËΩ5OTj_a’Èˆ+-tkFdÄx8ªZ0eäM˛ˆ˛àÒ”…OçN+öÑ”ﬂRç…Œ4‚Â'íFú!*íPÇÕΩÍ…ïë-ˆŸm∫mSé+JS˜‘ƒ∑‚Ám-ò3TéU#»Cõ<⁄îøÊ>"Ã;íÂﬁ$©Øk¬Cûƒ¬{<Âuîk∂˘≥-SükîÏIL´Ra\[âWi$NÆ‘≈T ù<„œ<õ%¥∂NR•ùJôMÀ4ªü‡˙Ø$ÛY9Égr›vR|∑—<~ünºóSO{¢™{ Ì°'∂πßwIV§ÛLã‹€T¥™Ë’Y4 s        ç35"eÕõ¡·’^¶°^¬©©(OæÚ˙©Ùï˜õ&;∆ºÜ‰bíÍ™5M1JÔ>Íπ(¶ﬂ˜Jm)^#ƒ7\Wzìº»„%Ã^™ÙRûjS—JH˛9äˇ 
+
+ì˘Â‰πı‰H0,#˘ı>5e˛‹|ﬂ.úˇ &%¬·:È5˚ï S≤•JZúu’´RúWH« Ä6€Õñ*J+$ Ä             ìn∏Õ¥NfÁlî∏≤‚≠.4ÍºÖ$∆©∏º–iIdÙ.vSf\<«√‘yÕ]a’-ÕéöÚUÕZzä¸‘$â‡,gr¿Xö."ÅE8ñ’≈…a*˜vU oÚı¥óv—uÉ|∂Eª€^K—e¥óôrú‰®∞LO˘Ù{5?ºuÔÔ˜+lwˇ O≠⁄¶æIi›Õ{‡∏p¿       ÷`‚*a<yƒ	U8»qUV~’[®Ùîì‚•EJr—o>È¬Uf©«VÚÒ*Œz‚ıbº¡ùF]€
+’Ì˝’{"ªŒjÛRGá*Rî•)≈)JVÚîÆré
+¢‚ºÆj ¨ıo2‹∂°Z1£"≤í‡øé]∏[¶`{É⁄◊nOÑ¬RæAJ“§wU≥Œ+iªdΩ˜ı{3,≤TΩçH¿›€—u:}m&ÊrÌo!$˜7ìËˇ s˙X≈™ª≥ú2ﬁñk™˜”Í]{Ó)∆wÊ;ÿÔ;˚l÷ï©òâO%◊9.;ﬁ‰ß´⁄'ºˆ«M‡‹"<YnÈv¢¢E¢kºö+›Óß“RJ}…‰ùÌ•ø{≠ ˚ÂËΩ|˛ÀX'ùÂE›WÈ‚ <ôûÊ≈rp^)∑‚8 ÆòÆßèOMïn∏ü7óÆ<Ü_eq+mƒ—HU=Ù◊»|˘Ânós)n∫e¶ò‚∂≠VÊP™¸È¶è¬K∂ZºªU(=2œ—˙Ì¨∑YS∏K~èÓΩMƒ LàX    Ú•iMU_x˝/Lu\+ÉgÄ˜qΩÍåä¶æ6Ÿ¯U˛ÌﬁÒØusJ2≠=˝Ò6-mßw^4!¨üÎ˙-‰ùπé¨yäñƒıZ-jS0”NK™¯G{‹ﬁ™HÏ≠∏Ø;™≤≠QÔeØmoZQ£MnK˜ƒ &`                  Y.∏«√mST◊5ÆﬁØ
+á´‰U]é'∫Ê˜ˆÖm7Lúƒ+√ôëeúß63!ˇ {£≈ªπÎiWtË·7N“Ú‡ﬁO£˝œËs1ãEyg8eΩ,◊U˚ó‘ª@‚û@YÂZr      ^¯N„àÙÖAu*}≈¶d›>D!>Ê›~u+{∫ûë∏f˛q€∞%ZÌjnU˛Bv¥«)1íØÑsßùı2|Èó9Ø‹g \âRñßuj‘ßÆq⁄V1¶Ì)<‰ıÓ\∫Ω:Ωù¬eR¢º™≤ä”ΩÛËt Q:(qM≠.6•!iV§©*“§®‡ g]ØwõÏØæ]•‹$%Z]êÍúRS—ﬁ0@=îúûry≥»≈A(≈dÄ ÙÉ‹§… õ*iÂèY´ÎKÀ)—h8,^ìÇÓVzØŸ-◊
+πß‚m‰—IÙ®· Ÿ™ùãﬁÀ„æœ—ë›®¶Ác⁄\$ü›zìp ∞
+    Ksª+f≈Ê‹’‹Ø—Òz:[Rµ+ºÊØD∂Ó˚˙≠Éo7˙*â\n8è¥Ÿ±ïRQMJVÛä‘•rï“Q⁄õñ°u«{˙iÎ‡KˆR’JSπí”r˙ÎÂóâ¿ Üì`                    ¥8„+KÃ´J€W⁄∫…ﬁI¯M„,Àıa∏¢˘cÅwofô—ZëNÚhØÊG"ß÷„ïV*™)l∞®’˛ÕjM?Ö(f⁄´≠B9§ ~Í›RØ:|õ^êÄs Èu÷òiO:‚PÑSjïZÏ¢h‡wnmgÏ<=«·ÃÛrÓî‘€Û+ºÃEtSN{ûä}˛â™g~Ωxå1ÅÂ)∏>Á"‚Öiq˛íZË£≠ Wgï¸_÷Ö£Î/oeÉlˆy\^.ë˜ˆÒ;•Iì6K≤Ê»vDâSé∫Íµ-jW9J:@!˙ÔdÕ$ñH         gÃbﬁ«ÕCòÍ[ÖzGÅÆ™VÍ\’©•y€Ω‚3{jÚµ≠–’<ÃVÒª£*3“K#Ëp"|àÃ⁄„å=[MŸ˙*ÛjJRÍï êœë.ˆπ™Îvâ`¥mnawIVß£˝»™.≠™ZVï´z `¿  	{ïae¢¢!{+pûƒuS§îÍq_Âï4≤|+‰U6_y…œ.Ω÷´˘äÿWõG>’˚\í˜ı,möÇÜÕ∑ÈË ÔÄ                     lx2I£πe≈Vø≥‹d#˜ÈW‚ù¡U⁄◊\ŸØ¡›_ﬁ”`≥iv¨)>Ô±U„0 ˛ØRn úu:ÎL7WZPÑSmUZÏ•(UúÏŒ«±[Øal+*≠Ÿ[VóﬂJ¥™j∫?cÎvOC?≥çW7‰‡L1+d&ï≈‹d!^ÓÆsI˙4Û∫J›‰Ú†¬é„.£v∂ÔwœπwsÎ7¿0EM+ªïÛ=Ò\ªﬂ.ZÎ† E	p             ˛≈≥∞F(Öà·ÌØÉØKÌ|´*˜F¸ﬂI)/æ·Ì=∆©v<∂íÛKß9
+¶⁄T˘˙Zûÿùw|
+ÂéC¥´÷9i~A{Õ˛4˜INÃﬁJ5]´—Ô]x¯ë=©≤S•∏Îœ£”¡˝…î M»0  WﬁiˆÜØ˛"W®ÇπñgÖdU/
+Ÿ¶'»Õ…HWy•~R≥Œ–E´˘g…}ëdÏ„Oá◊Ó¿ ‚ù¿                      -'∂÷ü%^GÆÆiÓ∂⁄ê6|à≥÷…ïˆV›n®rcjúÂ>’UR}§~ÖgJ2◊$Uxù_â{VKˇ Oÿê»á?≥1x6√KöFãΩŸ
+MO*3ï9⁄W%=ÂsIVTÜ!GvTá(€L¢Æ8∫˚…ßçU(Œ:≈í±∂+∏bI
+VôN˚j¯6S∫⁄|ﬂIJ4±˚˜gABüˆñÓãâΩ≥ÿton~%Eú!ø´‡è  W•å                &Ó
+SúoﬁÌ∫∑$@mÌùf‹”˛°ìΩø“,ø˝)ÔÛ:X;qø§◊?CóçEJ¬™|ΩQk@úU¿ ã∂÷Áïì›Ju*ﬁ¸yî˙íÊïz*QPÀÁã,Õ‚5t∞≠)U.c{§§◊gÒ(j€qµ©óì•m´J”—RyDiË∏‹BØ≤îNˆR∫ïºËÒO?¯g 0JÄ         4Jï])Jî•n•) ‡Â	Sã‚€JîæäwîO9i¡±…Ã5zÃ%<¬“¶Ìç+Kö~ï\ﬁ w∫‹“y±·L;Üô§kíËù>¿ S_Ω^Zí-ú∏πäùWÿOÍ¸7}»ÂÓ”[[K±Iv⁄ÂπxÒ(´∂€É-Òœ[Ê!æìå8î˘⁄LTÈW%Zè°ïJTö•^:W„4úWîx«].Ò‰πM¥ôiÙ´•©<Æˆ”n∂ÀN1ŒïLﬂzÀœyßGk`‰ïjy.iÁÂ∏•@‹3#,o9qsDyµòjØòÑÈKΩU'öÁT”»Ωj3∑õßQd—*°Zù≈5VìÕ0 1ôAÍ·\?+b+~äïk∏IK:∫)Á+∫ùJ<¢∆phÀß!≤Ó?ªG“πH´6‰);‹O9Ó˜%=]]#{≥w◊1§¥’Ù„ÏsÒKËÿ[J´◊Eﬁˇ wìÃ8åCåÃH»¢a	m	¯íöl†2Ah•í…QpÇƒ5∞e•¡∂•Î¢€∑£M|z\Ø≤Üï¯∞ú,.U”ál»VÌU"SâÏÈB}eÏØvä≥´z„¬)/,˝Kf®*V
+|d€ÛÀ– ﬂ                ?fucª£ﬂ'jW§ÛîÜ	KÉû&∑·¸}X◊'í”whæ“’]âK⁄“§ßΩ•IÌi:8L„ÍRñôú‹bùÖX¡fÚ-‡ ≥ ∞  *Œº5L1ô7xÌ7¢4Á?H1ªÕwy_‚qÖ’ é8NìÏq|Fı;ksàëT”‡\VÍªÆiÛŒ–⁄ªãG8Îˇ N'{g.ˇ èz°'∫k/Ø=ﬂR¥ 
+±¿        >pmÀ6f©YÉ{éï°ï©ªckßãU<Øwy)Ô+¢@Ã≤‰áëû[Œ%¥vî≠)/∂≤F√ñt•É∂≥™ü)"ŸÀ(‹‹:≥Y®}ﬁû»ﬁ“ﬂJ⁄›Q¶Ús˚-|sG™ '≈|  ¶a`¯òÎ	Œ√“íû1‰kå∫¸È˜5yﬂ¬µ(˚≠∏Àãe‰È[jR\OEIÂB Qàr€À≈˜Ü!`Î´¥≠¬Bí¶„´ãRT‚îï%ŒNù*";MhÊÈ’ßÂΩ<ì}4&+t©™î™I%π¨⁄]u˙@%¨;¡ß0. K∑ö¬≤±Œ„\„]˛ÌΩﬂHô6C`ú„súé´Ω≈…ì14R[W∆€|î˝{ Îk\ÚÂÁ(ˆW7Ì©Ÿº⁄+T˚2ÌÀí˜–àÚá!nçˆq1äÏK:t∏‘G•Ÿù§Û[ÙïÈçñZé⁄i¥°”bRîÏ•)Ò¿úa¯u:übûØW≈˛Ú ∏é#[©€´¢—p_º¿ ﬂ4
+√¬±.”X◊^EmÔ%=Æ7ˇ …ñKÖeôOŸ,∏Åî“ââ%»Æ◊™Ív”“o“+i[c∞pøû|r~Eô≥ıL:û\3^` r»                 :eOá≠≠±`«Œ≠¯©“€/+çß‚vúÍuπ]-Eé∑‹!\·µ:›)©1ﬁN¶›itRWOôT>~õVÃÃWóÚ®Âín®Æ+S∞_Ò∞ÔwöÆ≤I6¥3∑JïœÕ|W∫ÛÍEÒMõÖ√um~Yr‡˝üóBÚ:ÀúÁ¬¯˝™CeUÉvJu9ıo+¨⁄πÈÙæbE&î.)\¡T§ÛD"Ω
+∂”tÍ«&ÅÂﬂ¨–±ñmé‚çQÁ0∏ÓvUO)Í$¢¶úe£1FN2Ré®†7˚$‹9{üb∏ßd®™:˙⁄y›‰ÈWxÛÀ¬É—EÃ{4ÿ≠0Ói˝”üáÕ+ÒWbé ‚T^ãNı√€™-l6Ú7ˆ—¨µzı„Ô—Ä§o       fŸ$7ÛSúÜfGq]î∏ï@)‰>yrí§óõ.qx£ŸØ©V•»à›˚DÓØ“Jân ’JU)=^OÔü‹ámm&„J™—fºrÀÏm fB¿          [«ÿU¨iÑnXm’&ïñŒ∆ó^c©ﬁBæÂQ%ôUæcˆ˘±‘Ãà´S.¥ÆSn%ZTìËApÄ Æ‘s·ò’T∆€ßá≈nõj˙i‰u4È%<§ÛìŸﬁçm+öj‚íŒQ’s_çI6Œbqµ®ÌÍº£-'˘–≠¿O¿                   ˆÀœGu#∏∂ùmZê∂’•IWI*Êñ)¯DUJgÊî¶ª≠±uØ&ø3˝ﬂù“+–7,Ø´XTÌ“}Wi_aÙ1
+}äÀ£‚è°M8€®Kç*äB©∂äßæv)s ÈÅî’í˜∆œ±j“îÚùãÛ∑“O—˘•©≥ﬁmxÜ⁄Õ⁄Õ9©p‰'SO4≠IW˚¯ãƒË‚0Œ•≈~Íª Á¬´·ìÏÕg£‡˝üq˘æŸ-¯éÕ2√tfé≈ú“ôu?U¸˝Úé‚‹1?‚9ÿv„„v"Ù•u‰∫ﬂ5ƒˆí_b·%óÙæa‰csT€:kISº∏ª|~b∑ª5Y°¥8Úh|h/ökó©–ŸÃC¯óoÂüì‡˛∫| @       XnXÕ∫∑p¿≥]•ï*t-\‰Ú]ß™ÆÚäÚzz˝p√7∏XÇ“ÊâP]K»Ë´§ïuTùﬁÒªá]ªò÷Z-zq˜ÍçJÕ_€Jã’È’iÌ—ó¯≈Ïaá°b;[õXòﬁ≠5ÆÛjÁ!_:k‚=“—Ñ„R*qy¶USÑ©…¬k&Ä ˙>@          Õ∂‹R„˜¸V≠◊E˚#—’M,IWKË’‚Ú˘È¬ˇ á/ÿb‡´e˛◊"§ÛO+¨ïrTû…O&˜álòí≠∑Î\iÒï„‚ﬂF™}t¯´ı‹GgË›øâEˆe‰˝∫¢EÜÌk4©÷]∏Øı„—î[Z±ÕR‰·+€÷⁄´˙¥îÒÌwU O§G^yõo™´+õiÁEîî´ÕsIØÇﬂ[ΩÕs[…mæ9cr∑TIÚ{æ˚º»¿À/qÕüWÈ,#we)ÁxäOúùI<E√ò›tπBU÷aI¸'6Tßî¢◊Tt°VùEú$üFtÉï•M´KâSjÎ'I¡d[˜Ä               ∑.Û7Â›…RmOqﬁW∂†∫Øbw≠’W[÷5 d•Vt&™Sy4c≠Fùƒ:´4¯ãc¸=èÌπŸ$ÌZ6&Dg7]a]SÒy*lí#1)á#Hm.¥ÍT⁄–Ø"íÆU
+Ü1MÔ›⁄Ωÿ%™<¶˜UŒC©Á6‚y…-ﬁYfuì1Ì5~>»◊(ÈOÜBUv©∫◊úûí+“˝‰˜	∆°~æ]’<üObΩ∆0I·œ‚“ﬂOÕu˜*ûc‡Á062∏aÍ&æ€údU+ù[Õ˛^È≠_ÖÎ,eûµØ¡‰©4˛Æ‚∑|◊4˘≈h!¯≠üÆ•Mi™Ëˇ r&òEÔÛ≠#UÎ£Íøs útÄ      %Óπâ˙µàïÖ.OÈ∑^Vû%JVÎ2π)Óπ…Ìi-}<áœ:)IÆ§©TRy*O)%—…‹q˙˘Ç¢\§≠*∏Fˆ¨ÍSﬁy<ÓÚt´ºLˆkrã¥üÎßÙ◊ƒÑmF°%yMn{•◊É˙È‡oÄZD@           Ê›Ø÷{zªDÄ◊NC…nïÛè%%õ=I…Âõ= h3”*b÷®sƒ]iÚH[û™Nñ≥Ô)úˇ ΩÌ∑€éı?	®ÒTÚ¯±ˇ ÈKºk5J^ë4–i°£µù\˙wqΩ∂ù•©>µyôÎïPQU/≈~©Ê«BﬁU|‘ûˇ :’,›H¯£≈avﬁJîº±∏›,÷õƒuEª["Ãetÿ¶ﬂe+•yS≥ﬂ/ÏòE≠ÅƒµÊ¬û¨=zïIVÕﬁvÖs{*7\g¬éÆ6‰<jZ*≠ﬂúûOeØÃÆÈ].∑›¡Îùﬁk“Âø]Ku⁄ÍRøﬂDäc∏ïù‘>%⁄ó˛π{˝âvœ·ó∂ï>-gŸé_◊ü∑‹ƒ RZ                ==àn∏ZÔ˚dò®Ú‚´RUÕRy…Ry…W9'ú® Píî^MJ1ú\d≥L∏ÿsXÛ´/ÁDM”Ú£™$ËµV’FyIÒWÁ¶›‰®ß≤b»É%¯2õ–¸u©óS—RU•^ëÓ`liw¿xÖãÌ©Z¥˚ñ≠)}ûsj¸*Ê®»ÃªÖöÒç.À⁄·]8π…J©±Hqƒ˚#jOI.j:˜˜±ƒm·VÚGsÔOèÔ3ãÜÿÀπù(«-Îπ≠WÔj‡åv¿      •¡ﬂ´cöYÂ;≤ı)ä≠\öHOπW÷OxãO€/=‘Hé‚êÎjKç∏ûjí≠IQ±kq+J—≠Sˇ >[ç{ªx›–ï	È%˛<˜üB¡≠‡Pﬁ0¡ˆºFä”\∆(ßRûk©›q>rTlÖ´N§j¡N:=ÂKR•7	jû@ }ü        yR[âŸ/xê“µ}I‰5yuÁ7Í:?V∞⁄êª”Ë÷Î™¶§√m\ïiÁ8Æj~ıxäΩsπ‹o3>Ô6DŸ.+U]}jZïÁ∑Î‘¨E{ü~ú‚™˝¡ıHWy[©ÓßJL∞ƒ±òÖW&˛^ªüR“¬⁄Xuæg´Ô‚∫ Œ:`                                     b∏+b~25€»^⁄∞§œéüâ*›rûvïwãR,†ƒü´çfπ)Õåºˇ Åøˆonz⁄U›.Â<ÖÅ≥ó?œ·Ω`Ú˙jΩ|
+Îi-~ÁƒZMgı—˙3ê #‡      Lv•∆v+ﬁ4<Ö6Ø©^# 5ò(N,¬˜à%·ÀìUCê‹“Öi›uæb”’ROºXÎ.∞∆>ÅHóË5S≠Ì‚%4≠.≥^™øïwHp]∆0[òrÁ
+ÎfÍ]W˜ÂÙà˛œ‹[Õ∫µÌWvZ¯¥V◊“∏}ô˜Ë˙?r„r…ÏÕµmúqZSŒåîæü‘£TódïtW„∫üÉu
+m^jé%Jhº™EÆ©£ªJΩ*˚È…>ç3§ b2Ä                                   —JNÛj“§ÚU÷/Üº”·[UÛU+Y±y]•&öΩ-•-ˇ {ç.9WlmJ⁄®NøøR\RìË©$üeÎvn'Oöœ¡˛Y⁄ =ªxU‰ÚÒ_ÑI‡rA           ç4<´÷∞‚8~}¥Eú≈i»}∫+g’Ò}«¨ôEMvd≥G±ìÉÌE‰ ·ò<]nãπÂÙäπNR≠≤\Òˇ f‚ΩUyƒv≥^,RU˜lï‰Û$4¶˝nQÙƒóˆUlVd∂Ø+n¢ãOÓ©ºŸ∫Â€†˚ñ´I,∂û‚ﬁ*◊ms—¯Ò˙¨˚œüº›G’ªdŒX]∂ª+¿CäÁGJ£◊¸:§$piÀk©.L◊ËÁ/Òj8”Ÿã∏øíQ~>«jUg/Ô/r§Çÿ/ÉZ)J\º°U˜”3˛RΩÊÜN_‚Èe9"?‹àŒπßåSj’∫≠<‰©*IœΩ¬.l)™µRÀMœ¸,j◊©®∑ûYÔ_‰‘¿0ÍÄ                             ¥|•QÃrç∑‹nÆzM6¢ÆkÇäk˙≠{_º´í I‹Ÿ◊ï¸z3É¥ã;	>ı˜'@b¿                DÜ#2©2Km4ï8µ÷ª(î”ÀZû7ê0Ô7À^µHºﬁ%¢,8®÷Î´ÒQ4ˇ èÃRº∆∆OcÃ]7)ö¥¬Ù≥™˘[e<ù]nrªGøúY≠/0ÆÍá≈µbÇÁµZ‰ÒÍ˘g?
+y©Î— «1e{/ÉK˙'‚˝πÉˇ ≤˘‰¥‰πuÊ |ëÄ                             µ|·÷>\Ω&©˝ÆÊÛâÏ•(G·©T˘)‘ÆivÚñ√˙Ωó+c»“Úb%◊©Ùéo´¯®ëÏÕ';∑Sˇ +Ô∏çmMU8√ãóŸ?¡∫ 	È_Ä               cÑ∂0r…ÉŸ√∞\™æ:¶‹Ri‰a‘ÁùU%?}Iú™\(Æ5ìè¢[Ë≠»VÊ˜zŒ8µ+’I∆«´ª{8Í˜xÎÂôŸ¿-’≈¸ñÂõ”œ" ¡f                               ∑ÂNs„ã}°M©Qs¬¶W£µjR{ “ûÒwRö&õMÑ[ër¨Öˇ H‹£Ëª›¥Ω!*¶Û-Û¸JÎ*ø*.bÏÌ{S_4∑øE˚Ã≠±ÏA_]eúcπwÛºÄ Ìú0               O∏Fj˛ïßÌ‰¯,]?›ó™º(lÎáé°]íöÒW	NØ§iJ¢Ω$èÌ,\¨≥\$ΩW©"Ÿâ®ﬂ‰¯≈˙?≤!∞_ñ                             	óÉÊUπà.m„KÙ_˙Æ∫¢! ~”!<Ó¬=%vTy?í˜,{%ª≈·∑b·Ê’MK‰π/g¡∑’È9ÊÔrm§ÌêŸ∑€„∂ƒhÌ•∂öE6%	ß&î$¯*“WU◊ ¥\˚˙~È¨W∆ïª[wÛ=_.ÓØÀÆôtÚÄNH                   "æ8-‹WÅU*5r}ôœi)Â-Ωö]J{ª›“TΩ’ºn® åÙk#=≠ƒÌ+Fº5ãÃ˘‚	ì=≤}x^S¯ø«’gíÊ©-7OÿúRπ_f•y™ÓêŸX]⁄T≤™ÈU[◊üyjŸ›“æ¢´R{üì‰¿ ÷6@                       Hò#"±∆2Rrm˙ÔxT‰)*™~çæRΩô®[’πübå[}∆ãö6±Ì÷íKºèõm«ññYmK[ä“î•:î•tRíw Æí%’´˛`∞¶X›SVæz˛€¢ü£Ât∫$´ó˘=É∞
+S"_πiﬁü&öú˙ëÔ7N…øì7g#I™∑[ﬂ.^n§3⁄YVNïûÂˇ Æ/ß/øC<vb0àÒ[CM6ö%Bt—)ßΩJ î≤"` z                  Ö>·ŸsnSä√T⁄∑^q(B~µTèÛg8môq0b≤â◊©‘‘mZR“~Qœõ´ ©VqV5ƒ¯÷gÖ‚;≥≥+∑SmrZkÏ€‰ß÷8Xñ;F≈∫q]©Ú‡∫øDwpÃæ!Vo≥|_EÓX|m¬;Dè"ŸfÇÊ"Sç’µ¯¥E™k∫™)JÂS≤öïÜKçΩ%◊ôéàÌ8µ)∂í•)-ßW%*VˆÈ÷]˛%_íï\∑ií–úa¯e6.4sÕÍ€◊– †                 €r«/ÊÊ&&j—[Q“ÙŸ	¯&2π)ˇ î…JîÎÕS¶≥l«Z¥-È∫µIjk
+á)∂Q!»Ø•ßΩÕjiZ\Ï´úv√¥›Æ‚Ìˆπ≤ï—b3éz©/ù∂”—nèiÅ∂bFm-4“i∫î§Œ¢RöiM6SÊ%ëŸTÚÌUÚ¸˙	msyˆi˙¸zî≤ÕíYü{≠8¨)"*+„◊1Ia>ñ˜¢H¯oÇúÖU/b‹JÑSﬂbz´˝„üî±¿ËPŸª:[Áú∫˛u∆“ﬁ÷›£—oÒfôÑÚ£‡ •€-çü
+M?kŸ_≠{J‰˜vòrït#ÿßóq¬´V•ivÍ…∑ﬁ C                    yröá˘OrE\W‘öm2iq⁄ôÿØßko!M≠?2ºGè>køBÖ‚LA;ﬂß‚í‘∑Æ©ÂuSÕOe)“ìŒ6Ï}ï¯õ/Áº’¬Œ[u˚^z‘“€ÊÍW5]UâSWßVùF´¶•«2ﬂ∑©J•( ÉN9n» &`       9”SÄ 8⁄ûö|·≠øîoŒ ‰Q∆’…q*ÔÏ√ô#v<9ˆRΩS‘õ–6ñßH=Ü0n.ï˚.ºªŸ∑Ω˘OEå≠Ãá˘ıﬁä§˙∆H€÷óıÉCπ£Ì4∫≥Vìf‡Ûô˜eßç¥1mi\•ÃêîÈÓßRâK
+p`√6ΩÒ]Õ˚ª®ﬁ´Sàc¯oWŒ°ømÉ^‹Ω–…s{ø>G>Á±µ_4Û|ñˇ «ô`ºàÒÂ—6À5-)W≥»^ÎL'§‚ø)E¡¿
+œóˆÏ÷¥kZ∂9"B”Moπ“WÚß4˜m6õ]é-∂{lxQõ¶„L7F”O∫á†L∞¨ñªmˆßœóBãcUq'ÿK≥√üP ;G                             :ùi∑õSo!+BÈ±I≠6“¶â}…¥øUo»¬—£ºÂ9pÍ¶˚ë]?¿[zU˛Z±O™Ã…F‚≠øÕJN=FØ+ÇŒ{z=“ı´«∂¥˙H0+¡GÌ›≈wäSÏô¸†/∞ìœ·/3˝sÜÂU˘
+pQ√<ÏSx˛Ìü d5¡Oß›±ÌŒÛ4ˇ L≈Çÿ/˙◊üπÔ˙Ê!-j?/c)æôxöl\Î‚ˇ ˜M”˝3Ω≤—4⁄™ﬁó⁄ù≥ˇ ÑÄ}G	±k˛(¯ø_ˆÀƒ»kÉvV∑ÂµÕwÌ'ªˇ 9Æ˘P◊ó
+kÌÃ}_å*√l÷î£‡ΩèáâﬁÀZ≤ˇ ÈôçdéT≥M©¡0+€÷ØYF{9[óºl‡k'ﬂ	
+ıÄ2+;hÈN>¬ÔÆß≠Ix≥97Oc¡ñJ}Vˆ)⁄úÖQÓxf“éÃ©¯@2*4£§WÅè„’ñ≤~&S6[CˆµÆ#}ñSO‰f°∂€Nñ”D”Ê »¢ñà¯mΩY˙”Cê£¿                          ˇŸ

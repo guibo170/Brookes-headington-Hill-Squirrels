@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Whimsical Squirrels of Headington Hill | Oxford Brookes University Field Guide</title>
+  <meta name="description" content="A playful, child-friendly storybook and digital field guide dedicated to the beloved squirrels of Headington Hill at Oxford Brookes University.">
+  
+  <!-- Google Fonts: Fraunces & Fredoka & Quicksand -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Floating Falling Leaves / Acorns Canvas Background -->
+  <canvas id="ambient-canvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Top Navigation & Sticky Audio Dock -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="#hero" class="brand-link" aria-label="Headington Hill Squirrel Field Guide">
+        <span class="brand-icon"><img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon brand-acorn-icon"></span>
+        <div class="brand-text">
+          <span class="brand-title">Headington Hill</span>
+          <span class="brand-sub">Canopy Crew Guide • Oxford Brookes</span>
+        </div>
+      </a>
+      <!-- Clean Text-Only Navigation Links (The Society Removed) -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#meet-the-squirrels" class="nav-item">Meet The Squirrels</a>
+        <a href="barry.html" class="nav-item barry-nav-highlight">⭐ Barry's Page</a>
+        <a href="#territory-map" class="nav-item">Territory Map</a>
+        <a href="#field-notes" class="nav-item">Field Notes</a>
+        <a href="#photo-archive" class="nav-item">Photo Archive</a>
+      </nav>
+      <!-- Audio Player & Sound Controls Widget -->
+      <div class="audio-widget-container" id="audio-widget-container">
+        <div class="audio-widget" role="region" aria-label="Campus Ambient Sound Player">
+          <button id="audio-play-toggle" class="audio-btn play-btn" aria-label="Play or Pause Campus Music" title="Play / Pause Campus Music">
+            <span class="play-icon" id="play-icon">▶</span>
+          </button>
+                    
+          <div class="audio-info">
+            <div class="track-header">
+              <span class="audio-waveform-bars" id="audio-waveform" aria-hidden="true">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </span>
+              <span class="track-title" title="Acorns on the Quad">Acorns on the Quad</span>
+            </div>
+            <div class="audio-controls-row">
+              <button id="audio-mute-toggle" class="mute-btn" aria-label="Toggle Mute" title="Toggle Sound">
+                <span id="mute-icon">🔇</span>
+              </button>
+              <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.05" value="0.25" aria-label="Volume Slider" title="Adjust Volume">
+              <span class="volume-label" id="volume-label">25%</span>
+            </div>
+          </div>
+        </div>
+        <!-- Breeze Toggle button -->
+        <button id="breeze-toggle" class="chip-toggle" aria-pressed="true" title="Toggle falling woodland breeze">
+          <span class="chip-emoji">🍃</span>
+          <span class="chip-text">Breeze: ON</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Audio Element (Sourced directly from ./Apic/) -->
+  <audio id="bg-audio" loop preload="auto">
+    <source src="./Apic/Acorns on the Quad.mp3" type="audio/mpeg">
+    <source src="./Apic/Acorns_on_the_Quad.mp3" type="audio/mpeg">
+    Your browser does not support audio playback.
+  </audio>
+
+  <main>
+    <!-- HERO SECTION (CLEAN STATIC TITLE, NO SUBTITLES, NO CUT-OFFS) -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-badge-wrap">
+          <span class="hero-badge">
+            <span class="badge-sparkle">✨</span> Oxford Brookes University Field Guide
+          </span>
+          <span class="hero-acorn-counter" id="acorn-counter-badge" title="Click acorns around the page to collect them!">
+            <img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon counter-acorn-icon"> <span id="acorn-count-text">0</span> Acorns Foraged
+          </span>
+        </div>
+
+        <!-- Clean, Normal, Fixed Main Title (No cut-offs, no interactivity on 'Hill') -->
+        <div class="hero-title-stage">
+          <h1 class="hero-title">
+            The Whimsical Squirrels <br>
+            <span class="hero-title-accent">of Headington Hill</span>
+          </h1>
+        </div>
+
+        <p class="hero-intro">
+          Welcome to the coziest corner of Oxford Brookes University! High up in the golden autumn trees of Headington Hill,
+          a merry band of curious squirrels are having giant adventures every single day.
+          They leap from branch to branch, whisper acorn secrets to the falling leaves, and keep a watchful eye on student picnics.
+          Step softly, listen closely, and let our magical storybook guide introduce you to the friendliest furry legends on campus!
+        </p>
+
+        <div class="hero-actions">
+          <a href="#meet-the-squirrels" class="btn btn-primary">
+            <span>Meet The Squirrels</span>
+            <span class="btn-arrow">↓</span>
+          </a>
+          <a href="#territory-map" class="btn btn-secondary">
+            <span>Explore Campus Map</span>
+            <span class="btn-icon">🗺️</span>
+          </a>
+          <button id="quick-serenade-btn" class="btn btn-outline" title="Start listening to Acorns on the Quad">
+            <span>Play Quad Serenade</span>
+            <span class="btn-music-note">🎵</span>
+          </button>
+        </div>
+
+        <!-- Hero Quick Stats / Highlights -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">230+</div>
+            <div class="stat-label">Real Campus Photos</div>
+            <div class="stat-sub">100% Authentic Oxford Brookes Squirrels</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3 Legendary</div>
+            <div class="stat-label">Storybook Heroes</div>
+            <div class="stat-sub">Pipkin, Barney &amp; Clementine</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">1 Friendly</div>
+            <div class="stat-label">Solo Society Member</div>
+            <div class="stat-sub">Guilly's Backyard Patrol</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: MEET THE SQUIRRELS (3 CARDS WITH EXPANDED KIDS' TALES) -->
+    <section class="squirrels-section section-padding" id="meet-the-squirrels">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-header-icon-wrap">
+            <img src="./Apic/360_F_2158830097_LeKnTwh4PN8IVrQjuLZZ72iwNGtsYvTL.jpg" 
+                 alt="Squirrel Silhouette Icon" 
+                 class="section-header-icon">
+          </div>
+          <span class="section-tag">Campus Storybook Friends</span>
+          <h2 class="section-title">Meet the Squirrels</h2>
+          <p class="section-desc">
+            Discover the three most famous furry champions of Headington Hill. 
+            Read their cozy storybook adventures and flip through real photographs of their campus life!
+          </p>
+        </div>
+
+        <!-- Squirrel Profiles Grid -->
+        <div class="profiles-grid">
+
+          <!-- SQUIRREL 1: PROFESSOR PIPKIN -->
+          <article class="squirrel-card" id="card-pipkin" data-squirrel="pipkin">
+            <div class="card-inner">
+              
+              <!-- Photo Showcase with Multi-Photo Switcher from ./Apic/ folder -->
+              <div class="card-media-wrap">
+                <div class="main-photo-stage">
+                  <img id="pipkin-main-img" 
+                       src="./Apic/IMG_0110.JPG" 
+                       alt="Professor Pipkin looking thoughtful under the ancient beech tree" 
+                       class="squirrel-main-photo" 
+                       loading="lazy"
+                       data-zoomable="true">
+                  <span class="photo-badge">Authentic Brookes Photo</span>
+                  <button class="zoom-trigger-btn" aria-label="Expand Professor Pipkin photograph" data-target="pipkin-main-img">
+                    🔍 Zoom
+                  </button>
+                </div>
+
+                <!-- Multiple Real Photos Thumbnail Carousel -->
+                <div class="photo-thumbs-shelf" role="tablist" aria-label="Professor Pipkin Photo Gallery">
+                  <button class="thumb-btn active" data-img="./Apic/IMG_0110.JPG" data-caption="Professor Pipkin examining a shiny new acorn beneath the beech tree leaves" aria-label="Photo 1">
+                    <img src="./Apic/IMG_0110.JPG" alt="Pipkin photo 1 thumbnail" loading="lazy">
+                  </button>
+                  <button class="thumb-btn" data-img="./Apic/IMG_0111.JPG" data-caption="Deep in thought, counting how many beech nuts fell from the branches today" aria-label="Photo 2">
+                    <img src="./Apic/IMG_0111.JPG" alt="Pipkin photo 2 thumbnail" loading="lazy">
+                  </button>
+                  <button class="thumb-btn" data-img="./Apic/IMG_0112.JPG" data-caption="Checking under a patch of green moss to make sure his winter snacks are safe" aria-label="Photo 3">
+                    <img src="./Apic/IMG_0112.JPG" alt="Pipkin photo 3 thumbnail" loading="lazy">
+                  </button>
+                  <button class="thumb-btn" data-img="./Apic/IMG_0113.JPG" data-caption="Inspecting the ancient tree roots for the best underground hiding spots" aria-label="Photo 4">
+                    <img src="./Apic/IMG_0113.JPG" alt="Pipkin photo 4 thumbnail" loading="lazy">
+                  </button>
+                  <button class="thumb-btn" data-img="./Apic/IMG_0114.JPG" data-caption="A dignified scholar pose right by the Headington Hill Hall garden path" aria-label="Photo 5">
+                    <img src="./Apic/IMG_0114.JPG" alt="Pipkin photo 5 thumbnail" loading="lazy">
+                  </button>
+                </div>
+                <p class="photo-caption-text" id="pipkin-caption">Professor Pipkin examining a shiny new acorn beneath the beech tree leaves</p>
+              </div>
+
+              <!-- Content & Personality Details -->
+              <div class="card-content">
+                <div class="squirrel-header-row">
+                  <div>
+                    <span class="squirrel-rank-chip">Scholar of the Woods 🎓</span>
+                    <h3 class="squirrel-name">Professor Pipkin</h3>
+                  </div>
+                  <span class="acorn-collectible" data-acorn-id="pipkin" title="Click to collect Professor Pipkin's beech acorn!"><img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon collectible-acorn-icon"></span>
+                </div>
+
+                <h4 class="squirrel-official-title">Chief Acorn Archivist &amp; Honorary Dean of Forestry</h4>
+
+                <div class="personality-block">
+                  <h5 class="field-label">Pipkin's Storybook Tale</h5>
+                  <p class="personality-text story-text">
+                    Professor Pipkin has the softest grey fur and wears glasses made of tiny twigs. 
+                    He loves counting shiny brown acorns every single morning. 
+                    Whenever the golden autumn leaves fall down from the big trees, Pipkin scurries around hiding his favorite treats 
+                    under soft green moss so he never forgets where they are. He is the smartest little buddy on the whole campus!
+                    Sometimes he even taps the tree trunks with his little paws, listening closely like a tree doctor to make sure the beech tree is healthy and happy.
+                  </p>
+                </div>
+
+                <div class="haunt-block">
+                  <h5 class="field-label">Favorite Haunt</h5>
+                  <p class="haunt-text">
+                    <span class="haunt-pin-icon">📍</span> Under the ancient beech tree right outside Headington Hill Hall.
+                  </p>
+                </div>
+
+                <!-- Field Attributes & Stats -->
+                <div class="squirrel-spec-grid">
+                  <div class="spec-item">
+                    <span class="spec-label">Favorite Hobby:</span>
+                    <span class="spec-val">Counting Acorns</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Tree Doctor Rating:</span>
+                    <span class="spec-val">10 / 10 Beech Care</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Moss Vault Secret:</span>
+                    <span class="spec-val">4,812 Treats Hidden</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Friendliness:</span>
+                    <span class="spec-val">Gentle &amp; Wise</span>
+                  </div>
+                </div>
+
+                <div class="card-footer-action">
+                  <button class="locate-btn" data-locate="pipkin">
+                    <span>Pinpoint on Campus Map</span>
+                    <span>→</span>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+          </article>
+
+
+          <!-- SQUIRREL 2: BARNABY "THE BOLD" (PRIMARY FEATURED IMAGE: Acrobat.png SOURCED DIRECTLY FROM ./Apic/) -->
+          <article class="squirrel-card" id="card-barnaby" data-squirrel="barnaby">
+            <div class="card-inner">
+              
+              <!-- Photo Showcase with Multi-Photo Switcher (Primary Image: Acrobat.png) -->
+              <div class="card-media-wrap">
+                <div class="main-photo-stage">
+                  <img id="barnaby-main-img" 
+                       src="./Apic/acrobat.JPG" 
+                       alt="Barnaby the Bold (Barney the Acrobat) in acrobatic action" 
+                       class="squirrel-main-photo" 
+                       loading="lazy"
+                       data-zoomable="true">
+                  <span class="photo-badge">Featured: Acrobat.png</span>
+                  <button class="zoom-trigger-btn" aria-label="Expand Barnaby the Bold photograph" data-target="barnaby-main-img">
+                    🔍 Zoom
+                  </button>
+                </div>
+
+                <!-- Multiple Real Photos Thumbnail Carousel -->
+                <div class="photo-thumbs-shelf" role="tablist" aria-label="Barnaby the Bold Photo Gallery">
+                  <button class="thumb-btn active" data-img="./Apic/acrobat.JPG" data-caption="Barney balancing on a springy branch like a circus superstar" aria-label="Photo 1">
+                    <img src="./Apic/acrobat.JPG" alt="Acrobat hero thumbnail" loading="lazy">
+                  </button>
+                  <button class="thumb-btn" data-img="./Apic/IMG_0150.JPG" data-caption="Scoping out the lawn from high above, spotting delicious picnic snacks" aria-label="Photo 2">
+                    <img src="./Apic/IMG_0150.JPG" alt="Barnaby photo 2 thumbnail" loading="lazy">
+                  </button>
+                  <button class="thumb-btn" data-img="./Apic/IMG_0148.JPG" data-caption="Mid-air assessment right before doing a daring leap between oak branches" aria-label="Photo 3">
+                    <img src="./Apic/IMG_0148.JPG" alt="Barnaby photo 3 thumbnail" loading="lazy">
+                  </button>
+                  <button class="thumb-btn" data-img="./Apic/IMG_0149.JPG" data-caption="Gripping the bark with tiny speedy paws, ready for an acrobatic sprint" aria-label="Photo 4">
+                    <img src="./Apic/IMG_0149.JPG" alt="Barnaby photo 4 thumbnail" loading="lazy">
+                  </button>
+                  <button class="thumb-btn" data-img="./Apic/IMG_0152.JPG" data-caption="Victory pose after inspecting the student lawn benches" aria-label="Photo 5">
+                    <img src="./Apic/IMG_0152.JPG" alt="Barnaby photo 5 thumbnail" loading="lazy">
+                  </button>
+                </div>
+                <p class="photo-caption-text" id="barnaby-caption">Barney balancing on a springy branch like a circus superstar</p>
+              </div>
+
+              <!-- Content & Personality Details -->
+              <div class="card-content">
+                <div class="squirrel-header-row">
+                  <div>
+                    <span class="squirrel-rank-chip acrobatic">Daredevil Acrobat <img src="./Apic/ACROBAT.svg" alt="Acrobat Icon" class="acrobat-svg-inline"></span>
+                    <h3 class="squirrel-name">Barnaby "The Bold" (Barney)</h3>
+                  </div>
+                  <span class="acorn-collectible" data-acorn-id="barnaby" title="Click to collect Barnaby's picnic acorn!"><img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon collectible-acorn-icon"></span>
+                </div>
+
+                <h4 class="squirrel-official-title">Grand High-Canopy Acrobat &amp; Picnic Inspector</h4>
+
+                <div class="personality-block">
+                  <h5 class="field-label">Barney's Storybook Tale</h5>
+                  <p class="personality-text story-text">
+                    Barney is a super brave and speedy squirrel who thinks the tall tree branches are his very own circus playground. 
+                    He loves to leap high up in the air from branch to branch with a big bushy tail trailing behind him like a fluffy flag. 
+                    Sometimes, if he smells a yummy sandwich on a park bench down below, he performs a funny little flip just to say hello to the students!
+                    He can balance on the thinnest twigs without wobbling once, and he always lands with a happy twitch of his whiskers.
+                  </p>
+                </div>
+
+                <div class="haunt-block">
+                  <h5 class="field-label">Favorite Haunt</h5>
+                  <p class="haunt-text">
+                    <span class="haunt-pin-icon">📍</span> The low-hanging oak branches near the student lawn.
+                  </p>
+                </div>
+
+                <!-- Field Attributes & Stats -->
+                <div class="squirrel-spec-grid">
+                  <div class="spec-item">
+                    <span class="spec-label">Circus Trick:</span>
+                    <span class="spec-val">Triple Branch Leap</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Favorite Snack:</span>
+                    <span class="spec-val">Crusty Bread Crumbs</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Tail Status:</span>
+                    <span class="spec-val">Extra Big &amp; Fluffy</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Fear Level:</span>
+                    <span class="spec-val">Zero (Super Brave!)</span>
+                  </div>
+                </div>
+
+                <div class="card-footer-action">
+                  <button class="locate-btn" data-locate="barnaby">
+                    <span>Pinpoint on Campus Map</span>
+                    <span>→</span>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+          </article>
+
+
+          <!-- SQUIRREL 3: LADY CLEMENTINE -->
+          <article class="squirrel-card" id="card-clementine" data-squirrel="clementine">
+            <div class="card-inner">
+              
+              <!-- Photo Showcase with Multi-Photo Switcher from ./Apic/ folder -->
+              <div class="card-media-wrap">
+                <div class="main-photo-stage">
+                  <img id="clementine-main-img" 
+                       src="./Apic/IMG_0116.JPG" 
+                       alt="Lady Clementine basking gracefully in the sunbeams" 
+                       class="squirrel-main-photo" 
+                       loading="lazy"
+                       data-zoomable="true">
+                  <span class="photo-badge">Authentic Brookes Photo</span>
+                  <button class="zoom-trigger-btn" aria-label="Expand Lady Clementine photograph" data-target="clementine-main-img">
+                    🔍 Zoom
+                  </button>
+                </div>
+
+                <!-- Multiple Real Photos Thumbnail Carousel -->
+                <div class="photo-thumbs-shelf" role="tablist" aria-label="Lady Clementine Photo Gallery">
+                  <button class="thumb-btn active" data-img="./Apic/IMG_0116.JPG" data-caption="Lady Clementine curled up happily on the warm stone wall in the sunshine" aria-label="Photo 1">
+                    <img src="./Apic/IMG_0116.JPG" alt="Clementine photo 1 thumbnail" loading="lazy">
+                  </button>
+                  <button class="thumb-btn" data-img="./Apic/IMG_0117.JPG" data-caption="A gentle head tilt, posing sweetly like a little statue for a student photo" aria-label="Photo 2">
+                    <img src="./Apic/IMG_0117.JPG" alt="Clementine photo 2 thumbnail" loading="lazy">
+                  </button>
+                  <button class="thumb-btn" data-img="./Apic/IMG_0119.JPG" data-caption="A big sleepy stretch along the warm Cotswold stone wall path" aria-label="Photo 3">
+                    <img src="./Apic/IMG_0119.JPG" alt="Clementine photo 3 thumbnail" loading="lazy">
+                  </button>
+                  <button class="thumb-btn" data-img="./Apic/IMG_0120.JPG" data-caption="Nibbling a crunchy walnut gift with pure, peaceful contentment" aria-label="Photo 4">
+                    <img src="./Apic/IMG_0120.JPG" alt="Clementine photo 4 thumbnail" loading="lazy">
+                  </button>
+                  <button class="thumb-btn" data-img="./Apic/IMG_0121.JPG" data-caption="Resting her fluffy paws during a peaceful golden hour afternoon" aria-label="Photo 5">
+                    <img src="./Apic/IMG_0121.JPG" alt="Clementine photo 5 thumbnail" loading="lazy">
+                  </button>
+                </div>
+                <p class="photo-caption-text" id="clementine-caption">Lady Clementine curled up happily on the warm stone wall in the sunshine</p>
+              </div>
+
+              <!-- Content & Personality Details -->
+              <div class="card-content">
+                <div class="squirrel-header-row">
+                  <div>
+                    <span class="squirrel-rank-chip royal">Sunbeam Sovereign 👑</span>
+                    <h3 class="squirrel-name">Lady Clementine</h3>
+                  </div>
+                  <span class="acorn-collectible" data-acorn-id="clementine" title="Click to collect Lady Clementine's sunbeam acorn!"><img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon collectible-acorn-icon"></span>
+                </div>
+
+                <h4 class="squirrel-official-title">Guardian of the Sunbeams &amp; Afternoon Napper</h4>
+
+                <div class="personality-block">
+                  <h5 class="field-label">Clementine's Storybook Tale</h5>
+                  <p class="personality-text story-text">
+                    Lady Clementine is the quietest and coziest squirrel in the whole wide world. 
+                    When the bright afternoon sun shines through the green leaves, she finds the warmest stone wall to curl up into a fluffy little ball and take a long, happy nap. 
+                    She loves to pose very still just like a statue when kind students walk by to take pictures of her. 
+                    If you speak in a gentle whisper and leave a cracked walnut on the stone, she will open one sleepy eye, 
+                    give you the sweetest little tail wave, and smile her squirrel smile!
+                  </p>
+                </div>
+
+                <div class="haunt-block">
+                  <h5 class="field-label">Favorite Haunt</h5>
+                  <p class="haunt-text">
+                    <span class="haunt-pin-icon">📍</span> The sun-dappled stone walls along the hill path.
+                  </p>
+                </div>
+
+                <!-- Field Attributes & Stats -->
+                <div class="squirrel-spec-grid">
+                  <div class="spec-item">
+                    <span class="spec-label">Favorite Activity:</span>
+                    <span class="spec-val">Sunbeam Napping</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Walnut Pose Fee:</span>
+                    <span class="spec-val">1 Crunchy Walnut</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Cozy Rating:</span>
+                    <span class="spec-val">Maximum Warmth ☀️</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Statue Posing:</span>
+                    <span class="spec-val">Picture-Perfect</span>
+                  </div>
+                </div>
+
+                <div class="card-footer-action">
+                  <button class="locate-btn" data-locate="clementine">
+                    <span>Pinpoint on Campus Map</span>
+                    <span>→</span>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: CAMPUS MAP & TERRITORY GUIDE (FEATURING Oxford Brookes Arts Department Map FROM ./Apic/) -->
+    <section class="map-section section-padding" id="territory-map">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <div class="section-header-icon-wrap map-emblem-wrap">
+            <span class="section-header-icon map-guide-asset" style="font-size:2.5rem;">🗺️</span>
+          </div>
+          <span class="section-tag">Interactive Campus Cartography</span>
+          <h2 class="section-title">Headington Hill Squirrel Territory Guide</h2>
+          <p class="section-desc">
+            Explore the authentic Oxford Brookes Arts department campus grounds. 
+            Hover or tap on interactive territory beacons to see where our squirrel friends play, nap, and leap!
+          </p>
+        </div>
+
+        <!-- Map View Toggle & Territory Filter Toolbar -->
+        <div class="map-toolbar" role="toolbar" aria-label="Territory filter options">
+          <div class="map-view-switch-box">
+            <button class="view-switch-btn active" id="view-campus-map-btn" title="Detailed Campus Aerial Map">Campus Ground Map 🗺️</button>
+          </div>
+          
+          <div class="filter-pills-row">
+            <button class="map-filter-btn active" data-filter="all">All Territories 🌳</button>
+            <button class="map-filter-btn" data-filter="pipkin">Prof. Pipkin (Beech Hall) 🎓</button>
+            <button class="map-filter-btn" data-filter="barnaby">Barney (Student Lawn) <img src="./Apic/ACROBAT.svg" alt="Acrobat Icon" class="acrobat-svg-inline"></button>
+            <button class="map-filter-btn" data-filter="clementine">Lady Clementine (Hill Path) 👑</button>
+            <button class="map-filter-btn" data-filter="drama-studio">Arts department Hub <img src="./Apic/01-paint-palette-full.svg" alt="Palette Icon" class="palette-svg-inline"></button>
+          </div>
+        </div>
+
+        <!-- Interactive Map Wrapper -->
+        <div class="map-explorer-wrapper">
+          
+          <div class="map-canvas-container" id="map-canvas-container">
+            <!-- Native Campus Map Image Sourced Strictly from ./Apic/ -->
+            <img id="campus-map-img" 
+                 src="./Apic/Oxford-Brookes-Drama-Studio-Location.jpg" 
+                 alt="Oxford Brookes Arts department Location and Headington Hill Grounds Map" 
+                 class="campus-map-img">
+
+            <!-- Interactive Pin 1: Professor Pipkin (Ancient Beech outside Headington Hill Hall) -->
+            <div class="map-pin-beacon" 
+                 id="pin-pipkin" 
+                 data-target-squirrel="pipkin"
+                 style="top: 26%; left: 34%;"
+                 tabindex="0"
+                 role="button"
+                 aria-label="Professor Pipkin's Territory: Ancient Beech outside Headington Hill Hall">
+              <div class="pin-radar"></div>
+              <div class="pin-marker pipkin-marker">
+                <span class="pin-emoji">🎓</span>
+              </div>
+              <div class="pin-label">Pipkin's Beech Tree</div>
+
+              <!-- Interactive Hover / Click Popover Card -->
+              <div class="pin-popover" role="tooltip">
+                <div class="popover-badge">Chief Acorn Archivist</div>
+                <div class="popover-flex">
+                  <img src="./Apic/IMG_0110.JPG" alt="Prof Pipkin thumbnail" class="popover-avatar">
+                  <div>
+                    <h4 class="popover-title">Headington Hill Hall Beech</h4>
+                    <p class="popover-text">Where Pipkin counts his shiny acorns and checks his moss hiding spots!</p>
+                  </div>
+                </div>
+                <div class="popover-meta">
+                  <span><img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon inline-acorn-icon"> 4,812 acorns counted</span>
+                  <span>🍃 Soft moss carpet</span>
+                </div>
+                <a href="#card-pipkin" class="popover-link">Read Pipkin's Story →</a>
+              </div>
+            </div>
+
+            <!-- Interactive Pin 2: Barnaby "The Bold" (Oak Branches & Student Lawn) -->
+            <div class="map-pin-beacon" 
+                 id="pin-barnaby" 
+                 data-target-squirrel="barnaby"
+                 style="top: 64%; left: 68%;"
+                 tabindex="0"
+                 role="button"
+                 aria-label="Barnaby the Bold's Territory: Student Lawn Oak Branches">
+              <div class="pin-radar"></div>
+              <div class="pin-marker barnaby-marker">
+                <img src="./Apic/ACROBAT.svg" alt="Acrobat Icon" class="acrobat-svg-pin">
+              </div>
+              <div class="pin-label">Barney's Circus Tree</div>
+
+              <!-- Interactive Hover / Click Popover Card -->
+              <div class="pin-popover" role="tooltip">
+                <div class="popover-badge acrobat">Grand High-Canopy Acrobat</div>
+                <div class="popover-flex">
+                  <img src="./Apic/acrobat.JPG" alt="Barnaby thumbnail" class="popover-avatar">
+                  <div>
+                    <h4 class="popover-title">The Student Lawn Oaks</h4>
+                    <p class="popover-text">The big springy branches where Barney does his giant flying leaps!</p>
+                  </div>
+                </div>
+                <div class="popover-meta">
+                  <span>🥪 Picnic flyway zone</span>
+                  <span>⚡ Super brave acrobat</span>
+                </div>
+                <a href="#card-barnaby" class="popover-link">Read Barney's Story →</a>
+              </div>
+            </div>
+
+            <!-- Interactive Pin 3: Lady Clementine (Sun-Dappled Stone Walls along Hill Path) -->
+            <div class="map-pin-beacon" 
+                 id="pin-clementine" 
+                 data-target-squirrel="clementine"
+                 style="top: 76%; left: 32%;"
+                 tabindex="0"
+                 role="button"
+                 aria-label="Lady Clementine's Territory: Sun-Dappled Stone Walls along Hill Path">
+              <div class="pin-radar"></div>
+              <div class="pin-marker clementine-marker">
+                <span class="pin-emoji">👑</span>
+              </div>
+              <div class="pin-label">Clementine's Sun Wall</div>
+
+              <!-- Interactive Hover / Click Popover Card -->
+              <div class="pin-popover" role="tooltip">
+                <div class="popover-badge royal">Guardian of Sunbeams</div>
+                <div class="popover-flex">
+                  <img src="./Apic/IMG_0116.JPG" alt="Lady Clementine thumbnail" class="popover-avatar">
+                  <div>
+                    <h4 class="popover-title">Historic Stone Wall Path</h4>
+                    <p class="popover-text">Warm stones perfect for sunshine siestas and sweet little tail waves.</p>
+                  </div>
+                </div>
+                <div class="popover-meta">
+                  <span>☀️ All-day sunshine</span>
+                  <span>📸 1 walnut per picture</span>
+                </div>
+                <a href="#card-clementine" class="popover-link">Read Clementine's Story →</a>
+              </div>
+            </div>
+
+            <!-- Interactive Pin 4: Oxford Brookes Arts department Hub -->
+            <div class="map-pin-beacon" 
+                 id="pin-drama-studio" 
+                 data-target-squirrel="drama-studio"
+                 style="top: 48%; left: 51%;"
+                 tabindex="0"
+                 role="button"
+                 aria-label="Oxford Brookes Arts department Headquarters">
+              <div class="pin-radar special"></div>
+              <div class="pin-marker studio-marker">
+                <img src="./Apic/01-paint-palette-full.svg" alt="Palette Icon" class="palette-svg-pin">
+              </div>
+              <div class="pin-label">Brookes Arts department</div>
+
+              <!-- Interactive Hover / Click Popover Card -->
+              <div class="pin-popover" role="tooltip">
+                <div class="popover-badge special">Campus Focal Point</div>
+                <div class="popover-flex">
+                  <div class="popover-studio-icon">
+                    <img src="./Apic/01-paint-palette-full.svg" alt="Palette Icon" class="palette-svg-popover">
+                  </div>
+                  <div>
+                    <h4 class="popover-title">Oxford Brookes Arts department</h4>
+                    <p class="popover-text">Where students rehearse and create art while squirrels watch happily from the roof!</p>
+                  </div>
+                </div>
+                <div class="popover-meta">
+                  <span>📍 Headington Hill Campus</span>
+                  <span>🎼 Stage door treat stash</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hidden Acorn on Map -->
+            <div class="map-hidden-acorn acorn-collectible" data-acorn-id="map-hall" style="top: 15%; left: 78%;" title="You found a hidden acorn on the map!">
+              <img src="./assets/acorn.svg" alt="Hidden Acorn" class="acorn-svg-icon map-acorn-icon">
+            </div>
+
+          </div>
+
+          <!-- Map Side Info Card -->
+          <div class="map-legend-card">
+            <h3 class="legend-title">🌿 Campus Explorer Guide</h3>
+            <p class="legend-intro">
+              Headington Hill's leafy slopes make the best playground in all of Oxford! 
+              Here is how each friend shares their corner of the campus:
+            </p>
+
+            <ul class="legend-list">
+              <li class="legend-item" data-focus="pipkin">
+                <span class="legend-swatch pipkin-swatch">🎓</span>
+                <div>
+                  <strong>Headington Hill Hall Beeches</strong>
+                  <p>Quiet and leafy. Professor Pipkin's outdoor acorn library.</p>
+                </div>
+              </li>
+              <li class="legend-item" data-focus="barnaby">
+                <span class="legend-swatch barnaby-swatch">
+                  <img src="./Apic/ACROBAT.svg" alt="Acrobat Icon" class="acrobat-svg-swatch">
+                </span>
+                <div>
+                  <strong>Student Lawn &amp; Low Oaks</strong>
+                  <p>Fast-flying branches! Barney's acrobatic runway and picnic spot.</p>
+                </div>
+              </li>
+              <li class="legend-item" data-focus="clementine">
+                <span class="legend-swatch clementine-swatch">👑</span>
+                <div>
+                  <strong>Hill Path Stone Walls</strong>
+                  <p>Warm Cotswold stone. Lady Clementine's sunny siesta wall.</p>
+                </div>
+              </li>
+              <li class="legend-item" data-focus="drama-studio">
+                <span class="legend-swatch studio-swatch">
+                  <img src="./Apic/01-paint-palette-full.svg" alt="Palette Icon" class="palette-svg-swatch">
+                </span>
+                <div>
+                  <strong>Oxford Brookes Arts department</strong>
+                  <p>The creative arts building where music, laughter, and squirrels meet.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="acorn-hint-box">
+              <span class="hint-icon">💡</span>
+              <p><strong>Explorer Tip:</strong> Tap any pin on the map to see its secret story!</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: FIELD NOTES (FEATURING FildNOte.png SOURCED STRICTLY FROM ./Apic/) -->
+    <section class="notes-section section-padding" id="field-notes">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-header-icon-wrap">
+            <img src="./Apic/FildNOte.png" 
+                 alt="Field Notes Section Icon" 
+                 class="section-header-icon">
+          </div>
+          <span class="section-tag">Helpful Campus Guide</span>
+          <h2 class="section-title">Field Notes for Junior Explorers</h2>
+          <p class="section-desc">
+            How to make friends with the Headington Hill canopy crew! Easy rules for kids, students, and walking buddies.
+          </p>
+        </div>
+
+        <div class="notes-grid">
+          
+          <div class="note-card">
+            <div class="note-icon">🥪</div>
+            <h3 class="note-title">Watch Out for Your Sandwiches!</h3>
+            <p class="note-text">
+              If you sit down on the picnic benches to eat your lunch, keep two eyes on your bread crusts! 
+              Barney has super-fast squirrel eyes. If you look away for even a tiny second, he might do a quick little swoop to say hello!
+            </p>
+            <span class="acorn-collectible" data-acorn-id="note1" title="Collect field note acorn!"><img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon collectible-acorn-icon"></span>
+          </div>
+
+          <div class="note-card">
+            <div class="note-icon">📸</div>
+            <h3 class="note-title">Taking a Photo of Clementine</h3>
+            <p class="note-text">
+              Want a picture of Lady Clementine? Hold your camera super steady and speak in a soft, kind whisper. 
+              If you gently place a walnut on the stone wall, she will pose like a movie star and stay still until you take the shot!
+            </p>
+            <span class="acorn-collectible" data-acorn-id="note2" title="Collect field note acorn!"><img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon collectible-acorn-icon"></span>
+          </div>
+
+          <div class="note-card">
+            <div class="note-icon">🍂</div>
+            <h3 class="note-title">Quiet Steps Near Professor Pipkin</h3>
+            <p class="note-text">
+              When Professor Pipkin is looking very serious under the beech leaves, walk on your tiptoes. 
+              He is probably busy counting his acorn stash or checking which leaf is the crispest. Give him a little wave, and he will nod back!
+            </p>
+            <span class="acorn-collectible" data-acorn-id="note3" title="Collect field note acorn!"><img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon collectible-acorn-icon"></span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: WILDLIFE OBSERVATION SOCIETY (FEATURING GUILLY JOKE & ./Apic/Guilly.jpeg) -->
+    <section class="society-section section-padding" id="society-secret">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <span class="section-tag funny-tag">Top-Secret Campus Revelation 🕵️‍♂️</span>
+          <h2 class="section-title">The "Grand" Wildlife Observation Society</h2>
+          <p class="section-desc">
+            A prestigious institution of science, nature, and walnut diplomacy…
+          </p>
+        </div>
+        
+        <div class="society-card">
+          <div class="society-card-ribbon">Exclusive Membership</div>
+
+          <div class="society-grid">
+            
+            <div class="society-media">
+              <div class="guilly-portrait-frame">
+                <img src="./Apic/Guilly.jpeg" 
+                     alt="Guilly - Founder and Sole Member of the Headington Hill Wildlife Observation Society" 
+                     class="guilly-photo">
+              </div>
+              <div class="guilly-name-plate">
+                <span class="guilly-name">Guilly</span>
+                <span class="guilly-role">Official Founder 🎖️</span>
+              </div>
+              <p class="guilly-caption">Chief Explorer on active campus walnut patrol</p>
+            </div>
+
+            <div class="society-content">
+              
+              <div class="society-joke-box">
+                <div class="joke-setup">
+                  <p class="society-joke-p1">
+                    You might hear people talking about the prestigious <strong>"Headington Hill Wildlife Observation Society"</strong> 
+                    and imagine a giant marble laboratory filled with fifty scientists wearing white coats, giant telescopes, 
+                    and fancy gold medals…
+                  </p>
+                </div>
+                <div class="joke-punchline">
+                  <div class="punchline-accent"></div>
+                  <div>
+                    <p class="society-joke-p2">
+                      …Well, big surprise! The entire grand society is actually just <em>ONE SINGLE MAN</em> named <strong>Guilly</strong>! 😂
+                    </p>
+                  </div>
+                </div>
+                <p class="society-joke-p3">
+                  Equipped with a giant bag of English walnuts, a camera, and infinite patience, Guilly sits under the campus trees 
+                  every day making sure each squirrel gets their fair share of treats. He is the President, the Secretary, the Photographer, 
+                  and the Snack Provider all in one!
+                </p>
+              </div>
+
+              <div class="society-meta-row">
+                <div class="society-meta-item">
+                  <span class="meta-icon">👤</span>
+                  <div>
+                    <strong>Total Members:</strong>
+                    <span>Exactly 1 (Guilly!)</span>
+                  </div>
+                </div>
+                <div class="society-meta-item">
+                  <span class="meta-icon">🥜</span>
+                  <div>
+                    <strong>Annual Budget:</strong>
+                    <span>100% Walnuts</span>
+                  </div>
+                </div>
+                <div class="society-meta-item">
+                  <span class="meta-icon">🐿️</span>
+                  <div>
+                    <strong>Squirrel Approval:</strong>
+                    <span>100% Five-Star</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: PHOTO ARCHIVE (FEATURING ./Apic/phtotoA.png & DETAILED KIDS' CAPTIONS) -->
+    <section class="archive-section section-padding" id="photo-archive">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-header-icon-wrap">
+            <img src="./Apic/phtotoA.png" 
+                 alt="Photo Archive Section Icon" 
+                 class="section-header-icon">
+          </div>
+          <span class="section-tag">Extracted Photographic Chronicle</span>
+          <h2 class="section-title">The Oxford Brookes Squirrel Album</h2>
+          <p class="section-desc">
+            Every snapshot below is a 100% real photo taken right here on Headington Hill. 
+            Click on any picture to zoom in and read the detailed storybook tale of what our furry friends were doing!
+          </p>
+        </div>
+
+        <!-- Filter Tags -->
+        <div class="gallery-filters" role="tablist">
+          <button class="gallery-filter-btn active" data-gallery-filter="all">All Stories 📖</button>
+          <button class="gallery-filter-btn" data-gallery-filter="pipkin">Professor Pipkin 🎓</button>
+          <button class="gallery-filter-btn" data-gallery-filter="barnaby">Barney the Acrobat <img src="./Apic/ACROBAT.svg" alt="Acrobat Icon" class="acrobat-svg-inline"></button>
+          <button class="gallery-filter-btn" data-gallery-filter="clementine">Lady Clementine 👑</button>
+        </div>
+
+        <!-- Gallery Grid of Real Extracted Photos Sourced Strictly from ./Apic/ -->
+        <div class="gallery-grid" id="chronicle-gallery">
+          
+          <!-- Item 1: Pipkin -->
+          <div class="gallery-item" data-category="pipkin" 
+               data-caption="On a cool autumn morning, Professor Pipkin picked up a super smooth brown acorn and held it with both front paws. He inspected every millimeter of its shell to ensure it was grade-A quality before digging a cozy little hole under a pile of orange leaves.">
+            <img src="./Apic/IMG_0110.JPG" alt="Professor Pipkin evaluating acorns" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Professor Pipkin</span>
+              <p class="gallery-sub">The Morning Acorn Audit</p>
+            </div>
+          </div>
+
+          <!-- Item 2: Pipkin Leaf Analysis -->
+          <div class="gallery-item" data-category="pipkin" 
+               data-caption="Pipkin sat very quietly right by the beech tree roots, staring closely at the yellow leaves floating down. In his little squirrel mind, he was working out a clever puzzle: which leaves would make the softest, warmest blanket for his winter bed?">
+            <img src="./Apic/IMG_0115.JPG" alt="Pipkin reviewing foliage" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Professor Pipkin</span>
+              <p class="gallery-sub">The Secret Blanket Hunt</p>
+            </div>
+          </div>
+
+          <!-- Item 3: Barney Acrobat Climb -->
+          <div class="gallery-item" data-category="barnaby" 
+               data-caption="Look at Barney go! With lightning-fast paws and his fluffy tail puffing out like a kite, he darted straight up the side of a giant oak tree trunk. He stopped for half a second, gave a cheeky wink toward the student lawn, and prepared to leap!">
+            <img src="./Apic/acrobat.JPG" alt="Barney agile trunk climbing" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Barney the Bold</span>
+              <p class="gallery-sub">The Lightning Tree Sprint</p>
+            </div>
+          </div>
+
+          <!-- Item 4: Barney Branch Scouting -->
+          <div class="gallery-item" data-category="barnaby" 
+               data-caption="Barney leaned forward on a bouncy branch, wiggling his nose in the air. Down below on the lawn, a student had opened a lunchbox with a warm sandwich. Barney whispered to his tail, 'Get ready, tail, we are going to do our greatest acrobatic flip!'">
+            <img src="./Apic/IMG_0151.JPG" alt="Barnaby poised on branch" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Barney the Bold</span>
+              <p class="gallery-sub">Picnic Reconnaissance</p>
+            </div>
+          </div>
+
+          <!-- Item 5: Clementine Sunbathing -->
+          <div class="gallery-item" data-category="clementine" 
+               data-caption="Lady Clementine discovered the most magical patch of golden sunlight along the ancient stone wall. She stretched her tiny paws out, curled her fluffy tail right over her back like a furry parasol, and drifted off into a lovely afternoon nap.">
+            <img src="./Apic/IMG_0116.JPG" alt="Lady Clementine sunbathing on stone" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Lady Clementine</span>
+              <p class="gallery-sub">The Golden Sunbeam Nap</p>
+            </div>
+          </div>
+
+          <!-- Item 6: Clementine Walnut Feast -->
+          <div class="gallery-item" data-category="clementine" 
+               data-caption="A student in a warm scarf gently set a fresh walnut on the stone ledge. Lady Clementine picked it up gracefully, sat up straight as a queen, and nibbled the crunchy center with utter delight while everyone stopped to take pictures of her cute cheeks.">
+            <img src="./Apic/IMG_0120.JPG" alt="Lady Clementine enjoying walnuts" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Lady Clementine</span>
+              <p class="gallery-sub">A Royal Walnut Treat</p>
+            </div>
+          </div>
+
+          <!-- Item 7: Pipkin Underground Caching -->
+          <div class="gallery-item" data-category="pipkin" 
+               data-caption="Pipkin used his speedy little front paws like miniature bulldozers, digging a safe pantry right between two mossy roots. He patted down the soil with his nose so that Barney the Acrobat wouldn't accidentally borrow his favorite acorns!">
+            <img src="./Apic/IMG_0113.JPG" alt="Pipkin ground research" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Professor Pipkin</span>
+              <p class="gallery-sub">The Secret Moss Pantry</p>
+            </div>
+          </div>
+
+          <!-- Item 8: Barney Launch Stance -->
+          <div class="gallery-item" data-category="barnaby" 
+               data-caption="Ready, set, jump! Barney tucked his hind legs underneath him and prepared for a four-meter glide through the crisp autumn air. He landed gracefully on the next branch without shaking off even a single drop of morning dew.">
+            <img src="./Apic/IMG_0152.JPG" alt="Barnaby launching stance" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Barney the Bold</span>
+              <p class="gallery-sub">Canopy Flight Champion</p>
+            </div>
+          </div>
+
+          <!-- Item 9: Clementine Peaceful Rest -->
+          <div class="gallery-item" data-category="clementine" 
+               data-caption="The afternoon bells of Oxford began to chime softly in the distance. Lady Clementine rested her chin on the warm grey stone, watching the students walk to class while the autumn breeze gently tickled her silver whiskers.">
+            <img src="./Apic/IMG_0121.JPG" alt="Lady Clementine resting" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Lady Clementine</span>
+              <p class="gallery-sub">Oxford Chimes and Siestas</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- BARRY SPECIAL FEATURE BANNER: LINK TO DEDICATED PAGE (PLACED AT BOTTOM OF PAGE) -->
+        <div class="barry-teaser-banner barry-bottom-banner">
+          <div class="teaser-inner">
+            <div class="teaser-avatar-wrap">
+              <img src="./Apic/Bary.jpg" alt="Barry the famous squirrel" class="teaser-avatar">
+              <span class="teaser-acorn-badge acorn-collectible" data-acorn-id="barry-teaser" title="Click to collect Barry's special teaser acorn!">
+                <img src="./assets/acorn.svg" alt="Barry's Dedicated Acorn" class="acorn-svg-icon teaser-acorn-svg">
+              </span>
+            </div>
+            <div class="teaser-content">
+              <div class="teaser-badge-row">
+                <span class="squirrel-rank-chip barry-legendary-chip">Supreme Campus Legend 🌟</span>
+                <span class="teaser-missing-chip">Status: Missing 🔍</span>
+              </div>
+              <h3 class="teaser-title">Looking for Barry? He Has a Dedicated Page!</h3>
+              <p class="teaser-desc">
+                Tamed by the Headington Hill security guard and featured in <em>The Guardian UK</em> (2012), Barry is the most special, delightfully chubby squirrel in Brookes history. Discover his story, his press archive, and the mystery of his latest adventures!
+              </p>
+              <div class="teaser-action">
+                <a href="barry.html" class="btn btn-primary teaser-btn">
+                  <span>Visit Barry's Dedicated Page</span>
+                  <span class="btn-arrow">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX MODAL FOR REAL CAMERA PHOTOGRAPHS -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close photo preview">✕</button>
+      <div class="lightbox-img-wrap">
+        <img id="lightbox-img" src="" alt="Expanded squirrel photograph">
+      </div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- CELEBRATION TOAST (FOR ACORN COLLECTING) -->
+  <div class="toast-notification" id="toast" role="dialog" aria-live="polite">
+    <button class="toast-close-btn" id="toast-close-btn" aria-label="Close notification">✕</button>
+    <span class="toast-icon"><img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon toast-acorn-icon"></span>
+    <span class="toast-msg" id="toast-msg">Acorn collected!</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-brand">
+        <span class="footer-logo"><img src="./assets/acorn.svg" alt="Acorn" class="acorn-svg-icon footer-acorn-icon"> Headington Hill Canopy Crew</span>
+        <p class="footer-desc">
+          A heartfelt, child-friendly digital field guide lovingly crafted for the Oxford Brookes University community and animal lovers everywhere.
+        </p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-heading">Canopy Quick Links</h4>
+        <ul>
+          <li><a href="#meet-the-squirrels">Meet the Squirrels</a></li>
+          <li><a href="barry.html">⭐ Barry's Dedicated Page</a></li>
+          <li><a href="#territory-map">Campus Map &amp; Territory</a></li>
+          <li><a href="#field-notes">Junior Explorer Notes</a></li>
+          <li><a href="#society-secret">The Guilly Secret</a></li>
+          <li><a href="#photo-archive">Photographic Chronicle</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-heading">Campus Wildlife Notes</h4>
+        <p class="footer-small">
+          📍 Headington Hill Hall &amp; Oxford Brookes Arts department<br>
+          🎵 Soundtrack: "Acorns on the Quad"<br>
+          📸 100% Real Photographs from Headington Hill Archives<br>
+          🎖️ Guilly: Sole Member of the Observation Society
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom text-center">
+      <p>© Oxford Brookes Squirrel Admiration Guild • No squirrels were bribed with anything less than Grade-A English Walnuts.</p>
+      <a href="#hero" class="back-to-top-btn" aria-label="Back to top">
+        <span>Scamper to Top</span> 🐿️
+      </a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
